@@ -1,11 +1,16 @@
-*{
-    font-family: 'Alkatra', cursive;
 
-}
+.Container0{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    color: white;
+    background: url(/img/bg1.jpg);
+    ::-webkit-scrollbar{
+        display: none;
 
-body {
-    background-color: black;
 
+    }
 }
 
 
