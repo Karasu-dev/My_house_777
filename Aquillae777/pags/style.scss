@@ -3,15 +3,12 @@
     height: 100vh;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    overflow-y: auto;
     scrollbar-width: none;
     color: white;
-    background: url(/img/bg1.jpg);
-    ::-webkit-scrollbar{
-        display: none;
-
-
+    background: url(../img/6481298.jpg);
+    &::-webkit-scrollbar{
+      display: none;
     }
+
 }
-
-
-

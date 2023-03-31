@@ -4,7 +4,9 @@ import "./style.scss"
 
 export const Hero = () => {
     return(
-<div className="container1"> olá </div> )
+<div className="container1">
+    
+</div> )
 }
 
 export default Hero;
