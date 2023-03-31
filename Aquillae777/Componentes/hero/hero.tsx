@@ -1,12 +1,13 @@
 import React from "react-dom";
-import "./style.scss"
+import NavBar from "../navbar/Navbar";
+import "./style.scss";
 
 
 export const Hero = () => {
-    return(
-<div className="container1">
-    
-</div> )
+    return (
+        <div className="container1">
+            <NavBar></NavBar>
+        </div>)
 }
 
 export default Hero;
