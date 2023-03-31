@@ -4,7 +4,6 @@ import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
 import "./style.scss";
-import styled from "styled-components"
 
 
 
