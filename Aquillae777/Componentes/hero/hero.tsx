@@ -1,4 +1,3 @@
-import React from "react-dom";
 import NavBar from "../navbar/Navbar"
 import "./style.scss"
 

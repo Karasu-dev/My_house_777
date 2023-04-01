@@ -1,5 +1,3 @@
-import { Dropdown } from "react-bootstrap";
-import React, { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -30,9 +28,9 @@ const Links = styled.div`
   gap: 50px;
 `;
 
-const Logo = styled.img`
+/*const Logo = styled.img`
   height: 80px;
-`;
+`;*/
 
 const Lista = styled.ul`
   display: flex;
@@ -51,26 +49,7 @@ const LinstsItem = styled.li`
   }
 `;
 
-const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
 
-const Icon = styled.img`
-  width: 20px;
-  cursor: pointer;
-`;
-
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
 
 const DropdownButton = styled.button`
   background-color: blue;
