@@ -7,7 +7,6 @@ export const Hero = () => {
     return(
 <div className="container1">
     <NavBar/>
-    
 </div> )
 }
 
