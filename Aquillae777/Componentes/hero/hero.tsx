@@ -3,6 +3,8 @@ import React from "react-dom";
 import NavBar from "../navbar/Navbar";
 import "./style.scss";
 import styled from "styled-components";
+import {GoOctoface} from "react-icons/go";
+
 
 
 const Section = styled.div`
@@ -53,8 +55,6 @@ position: relative;
   flex: 1;
   width: 100%;
 }
-
-
 `;
 
 const Title = styled.h1`
@@ -62,7 +62,6 @@ font-size: 74px
  @media only screen and (max-width: 768px){
   text-aling: center;
  }
-
 `;
 
 const Whatwedo = styled.div`
@@ -73,6 +72,8 @@ const Whatwedo = styled.div`
 `;
 
 const SUbtitle = styled.h2`
+font-size: 20px;
+color: black;
 
 `;
 
@@ -87,7 +88,12 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-
+background-color: black;
+color: white;
+width: 120px;
+height: 30px;
+border-radius: 10px;
+box-shadow: 4px 3px lightblue;
 `;
 
 const Line = styled.img`
@@ -106,14 +112,15 @@ export const Hero = () => {
             <NavBar />
             <Container>
               <Left> 
-                <Title>Eu sou </Title>
+                <Title> Aquillae7</Title>
                 <Whatwedo>
                   <Line src=""/>
-                  <SUbtitle>ESte é um site </SUbtitle>
+                  <SUbtitle> Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos </SUbtitle>
                 </Whatwedo>
-                <Desc> okokokokokok </Desc>
-                <Button> Ação  </Button>
+                <Desc>  </Desc>
+                <Button> GitHub <GoOctoface/></Button>
               </Left>
+
               <Right> 
                 <Img src="/img/aquillae-unscreen.gif"/>
               </Right>
