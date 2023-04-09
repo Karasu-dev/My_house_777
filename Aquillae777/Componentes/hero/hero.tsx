@@ -1,7 +1,7 @@
 
 import React from "react-dom";
 import NavBar from "../navbar/Navbar";
-import "./style.scss";
+import Who from "../who/who";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 
@@ -62,18 +62,31 @@ font-size: 74px
  @media only screen and (max-width: 768px){
   text-aling: center;
  }
+ animation: title 5s infinite ease alternate ;
+@keyframes title {
+  to {
+    transform: translateY(30px);
+  }
+}
 `;
 
 const Whatwedo = styled.div`
    display: flex;
    aling-items: center;
    gap: 10px
+   
 
 `;
 
 const SUbtitle = styled.h2`
 font-size: 20px;
 color: black;
+animation: SUbtitle 5s infinite ease alternate ;
+@keyframes SUbtitle  {
+  to {
+    transform: translateY(40px);
+  }
+}
 
 `;
 
@@ -83,7 +96,6 @@ const Desc = styled.p`
  @media only screen(max-witdh: 768px){
   padding: 20px;
   text-aling: center;
- }
 
 `;
 
@@ -94,6 +106,13 @@ width: 120px;
 height: 30px;
 border-radius: 10px;
 box-shadow: 4px 3px lightblue;
+animation: button 5s infinite ease alternate ;
+@keyframes button {
+  to {
+    transform: translateY(50px);
+  }
+}
+
 `;
 
 const Line = styled.img`
@@ -102,6 +121,29 @@ height: 5px;
 `;
 
 const Img = styled.img`
+width: 800px;
+height: 600px;
+object-fit: contain;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: animate 2s infinite ease alternate;
+
+@media only screen and (max-width: 768px) {
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(60px);
+  }
+}
+
+
 
 `;
 
@@ -122,7 +164,7 @@ export const Hero = () => {
               </Left>
 
               <Right> 
-                <Img src="/img/aquillae-unscreen.gif"/>
+                <Img src="/img/aquillae.gif"/>
               </Right>
             </Container>
         </Section>
