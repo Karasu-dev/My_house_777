@@ -80,7 +80,7 @@ const Whatwedo = styled.div`
 
 const SUbtitle = styled.h2`
 font-size: 20px;
-color: black;
+color: white;
 animation: SUbtitle 5s infinite ease alternate ;
 @keyframes SUbtitle  {
   to {

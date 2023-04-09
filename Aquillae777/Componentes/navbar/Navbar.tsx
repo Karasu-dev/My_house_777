@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "./style.scss";
 
 const Section = styled.div`
   display: flex;
@@ -103,32 +104,37 @@ const NavBar = () => {
       <Container>
         <Links>
           <Lista>
-            <LinstsItem>Home</LinstsItem>
-            <LinstsItem>Contact</LinstsItem>
+            <button className="cybr-btn"> Home<span aria-hidden>_</span>
+              <span aria-hidden className="cybr-btn__glitch">Home</span>
+            </button>
+            <button className="cybr-btn">
+              Contato<span aria-hidden>_</span>
+              <span aria-hidden className="cybr-btn__glitch">contato_</span>
+            </button>
             <LinstsItem></LinstsItem>
           </Lista>
         </Links>
         <DropdownContainer>
-      <DropdownButton>Dropdown</DropdownButton>
-      <DropdownContent>
-        <DropdownLink href="#">Link 1</DropdownLink>
-        <DropdownLink href="#">Link 2</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
-        <DropdownLink href="#">Link 3</DropdownLink>
+          <DropdownButton>Dropdown</DropdownButton>
+          <DropdownContent>
+            <DropdownLink href="#">Link 1</DropdownLink>
+            <DropdownLink href="#">Link 2</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Link 3</DropdownLink>
 
-      </DropdownContent>
-    </DropdownContainer>
+          </DropdownContent>
+        </DropdownContainer>
       </Container>
     </Section>
 
