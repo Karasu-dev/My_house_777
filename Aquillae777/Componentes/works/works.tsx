@@ -94,7 +94,9 @@ const works = () => {
                     </ItemLista>
                     </Item>
                 </Left>
-                <Right> </Right>
+                
+                <Right>
+                </Right>
 
             </Container>
         </Section>
