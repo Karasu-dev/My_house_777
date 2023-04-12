@@ -3,23 +3,38 @@ import Hero from "../Componentes/hero/hero";
 import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
-import "./style.scss";
+import styled from "styled-components";
 
 
 
+const Container = styled.div`
+height: auto;
+scroll-snap-type: y mandatory;
+scroll-behavior: smooth;
+overflow-y: auto;
+scrollbar-width: none;
+color: white;
+background: url(../img/i349388.webp);
+&::-webkit-scrollbar{
+  display: none;
+}
 
+`;
 
 const Home = () => {
     return (
-        <div className="Container0">
+
+        <Container>
+
             <Hero />
 
-            <Who/>
+            <Who />
 
             <Whors />
-            
+
             <Contact />
-        </div>
+        </Container>
+
 
 
 

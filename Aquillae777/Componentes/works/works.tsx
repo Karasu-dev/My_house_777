@@ -48,6 +48,13 @@ color: transparent;
 -webkit-text-stroke: 1px white;
 position: relative;
 flex-direction: column;
+animation: animate 4s  infinite ease alternate;
+@keyframe animate{
+  Button{
+    tranform: tranlateY(55px);
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   font-size: 24px;
@@ -63,7 +70,6 @@ flex-direction: column;
   color: blue;
   width: 0px;
   overflow: hidden;
- 
 }
 
 &:hover {
