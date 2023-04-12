@@ -151,7 +151,7 @@ export const Hero = () => {
     return (
 
         <Section>
-            <NavBar />
+            <NavBar/>
             <Container>
               <Left> 
                 <Title> Aquillae7</Title>
@@ -162,7 +162,6 @@ export const Hero = () => {
                 <Desc>  </Desc>
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
-
               <Right> 
                 <Img src="/img/aquillae.gif"/>
               </Right>

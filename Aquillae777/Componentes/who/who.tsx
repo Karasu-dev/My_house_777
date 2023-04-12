@@ -3,14 +3,17 @@ import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 
 
+const text = [
+"Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos ",
+];
+
 
 const Section = styled.div`
 height: 100vh;
 scroll-snap-align: center;
 display: flex;
-flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: center;
 
 @media only screen and (max-width: 768px) {
   height: 200vh;
@@ -47,18 +50,29 @@ gap: 20px;
 
 const Right = styled.div`
 flex: 3;
-position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+
 @media only screen and (max-width: 768px) {
   flex: 1;
   width: 100%;
 }
 `;
 
+
 const Title = styled.h1`
 font-size: 74px
  @media only screen and (max-width: 768px){
   text-aling: center;
  }
+ animation: title 6s infinite ease alternate ;
+ @keyframes title {
+  to {
+    transform: translateY(30px);
+  }
+}
 `;
 
 const Whatwedo = styled.div`
@@ -70,19 +84,16 @@ const Whatwedo = styled.div`
 
 const SUbtitle = styled.h2`
 font-size: 20px;
-color: black;
-
+color: white;
+animation: animate 6s infinite ease alternate;
+@keyframe animate{
+  Subtitle{
+    transform: translateY(40px);
+  }
+}
 `;
 
 
-const Desc = styled.p`
- font-size: 20px;
- @media only screen(max-witdh: 768px){
-  padding: 20px;
-  text-aling: center;
- }
-
-`;
 
 const Button = styled.button`
 background-color: black;
@@ -91,17 +102,15 @@ width: 120px;
 height: 30px;
 border-radius: 10px;
 box-shadow: 4px 3px lightblue;
+animation: animate 7s  infinite ease alternate;
+@keyframe animate{
+  Button{
+    tranform: tranlateY(55px);
+  }
+}
 `;
 
-const Line = styled.img`
-height: 5px;
 
-`;
-
-const Img = styled.img`
-
-
-`;
 
 export const Who = () => {
     return (
@@ -109,16 +118,12 @@ export const Who = () => {
         <Section>
             <Container>
               <Left> 
-                <Img src="/img/aquillae-unscreen.gif"/>
               </Left>
-
               <Right> 
-                <Title> Aquillae7</Title>
+                <Title> Aquillae777</Title>
                 <Whatwedo>
-                  <Line src=""/>
-                  <SUbtitle> Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos </SUbtitle>
+                  {text.map((item) => ( <SUbtitle> {text}</SUbtitle>))}                 
                 </Whatwedo>
-                <Desc>  </Desc>
                 <Button> GitHub <GoOctoface/></Button>
               </Right>
             </Container>
