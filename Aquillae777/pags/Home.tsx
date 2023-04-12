@@ -13,8 +13,11 @@ const Home = () => {
     return (
         <div className="Container0">
             <Hero />
-            <Who />
+
+            <Who/>
+
             <Whors />
+            
             <Contact />
         </div>
 
