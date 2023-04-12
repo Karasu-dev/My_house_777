@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const data = [
-    "tecnologia",
+    "tecnologia", "inovação","tecnologia", "inovação",
    
 ];
 
@@ -56,14 +56,14 @@ flex-direction: column;
 }
 
 ::after {
-  content: "${data}";
+  content: "tecnologia inovação tecnologia inovação";
   position: absolute;
   top: 0;
   left: 0;
   color: blue;
   width: 0px;
   overflow: hidden;
-  white-space: nowrap;
+ 
 }
 
 &:hover {
