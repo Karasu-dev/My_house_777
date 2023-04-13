@@ -49,20 +49,21 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
-  padding: 20px;
+  padding: 25px;
   border: none;
   border-radius: 5px;
   background-color: #e8e6e6;
 `;
 
 const Button = styled.button`
+ width: 150px;
   background-color: blue;
   color: white;
   border: none;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
 `;
 
 const Right = styled.div`
@@ -82,8 +83,8 @@ export const Contact = () => {
                     <Form>
                         <Title> Contato </Title>
                        <Form> 
-                        <Input placeholder="Email"/>
                         <Input placeholder="Nome"/>
+                        <Input placeholder="Email"/>
                         <TextArea placeholder="Olá..."/>
                        </Form>
                         <Button> enviar </Button>
