@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import "./style.scss";
+import {BrowserRouter, To, Link, Outlet} from "react-router-dom"
+
 
 const Section = styled.div`
   display: flex;
@@ -128,14 +130,10 @@ const NavBar = () => {
       <Container>
         <Links>
           <Lista>
-            <button className="cybr-btn"> Home<span aria-hidden>_</span>
-              <span aria-hidden className="cybr-btn__glitch">Home</span>
+            <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
+            <button    className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span>
             </button>
-            <button className="cybr-btn">
-              Contato<span aria-hidden>_</span>
-              <span aria-hidden className="cybr-btn__glitch">contato_</span>
-            </button>
-            <LinstsItem></LinstsItem>
+            <Outlet/>
           </Lista>
         </Links>
         <DropdownContainer>
