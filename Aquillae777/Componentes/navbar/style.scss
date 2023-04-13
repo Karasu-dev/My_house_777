@@ -27,10 +27,11 @@
     letter-spacing: 2px;
     position: relative;
     border: 0;
-    min-width: 300px;
+    min-width: 200px;
     height: 50px;
     line-height: 50px;
-    transition: background 0.2s;
+    transition:    background 0.1s;
+
   }
   
   .cybr-btn:hover {
@@ -72,11 +73,11 @@
     background: var(--shadow-primary);
     text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
     clip-path: var(--clip);
-    animation: glitch 2s infinite;
+    animation: glitch 1s infinite;
     display: none;
   }
   
-  .cybr-btn:hover .cybr-btn__glitch {
+  .cybr-btn__glitch {
     display: block;
   }
   
