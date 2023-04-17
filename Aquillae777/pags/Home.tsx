@@ -15,11 +15,10 @@ overflow-y: auto;
 scrollbar-width: none;
 color: white;
 background: url(../img/i349388.webp);
+z-index: -10;
 &::-webkit-scrollbar{
   display: none;
-}
-
-`;
+}`;
 
 const Home = () => {
     return (
@@ -32,6 +31,8 @@ const Home = () => {
 
             <Whors />
 
+            <Contact />
+ 
         </Container>
 
 

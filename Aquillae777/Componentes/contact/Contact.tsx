@@ -35,6 +35,14 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 25px;
+  z-index: 30;
+  animation: animate 3s infinite ease alternate;
+
+
+@keyframes animate {
+  to {
+    transform: translateY(15px);
+  }
 
   @media only screen and (max-width: 768px) {
     width: 300px;
@@ -46,6 +54,7 @@ const Input = styled.input`
   background-color: #e8e6e6;
   border: none;
   border-radius: 5px;
+  z-index: -0;
 `;
 
 const TextArea = styled.textarea`
