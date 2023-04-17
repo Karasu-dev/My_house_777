@@ -16,6 +16,7 @@ scrollbar-width: none;
 color: white;
 background: url(../img/i349388.webp);
 z-index: -10;
+background: black;
 &::-webkit-scrollbar{
   display: none;
 }`;
