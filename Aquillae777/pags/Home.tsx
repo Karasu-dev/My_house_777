@@ -34,7 +34,7 @@ const Home = () => {
             <Whors />
 
             <Contact />
- 
+
         </Container>
 
 

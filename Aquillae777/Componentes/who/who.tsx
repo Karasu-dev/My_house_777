@@ -1,4 +1,4 @@
-
+import React  from "react";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 import Cubo from "../Cubo/cube" 
