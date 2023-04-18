@@ -1,5 +1,7 @@
 import React from "react-dom";
 import styled from "styled-components";
+import GLobo from "../Word/"
+
 
 
 
@@ -73,6 +75,13 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
+  animation: Button 3s infinite ease alternate;
+
+
+  @keyframes Button {
+    to {
+      transform: translateX(50px);
+    }
 `;
 
 const Right = styled.div`
@@ -85,25 +94,26 @@ const Right = styled.div`
 
 
 export const Contact = () => {
-    return(
-        <Section>
-            <Container>
-                <Left>
-                    <Form>
-                        <Title> Contato </Title>
-                       <Form> 
-                        <Input placeholder="Nome"/>
-                        <Input placeholder="Email"/>
-                        <TextArea placeholder="Olá..."/>
-                       </Form>
-                        <Button> enviar </Button>
-                    </Form>
-                </Left>
-                <Right></Right>
-            </Container>
-        </Section>
-        
-   )
+  return (
+    <Section>
+      <Container>
+        <Left>
+          <Form>
+            <Title> Contato </Title>
+            <Form>
+              <Input placeholder="Nome" />
+              <Input placeholder="Email" />
+              <TextArea placeholder="Olá..." />
+            </Form>
+            <Button> enviar </Button>
+          </Form>
+        </Left>
+        <Right>
+        </Right>
+      </Container>
+    </Section>
+
+  )
 }
 
 export default Contact;
