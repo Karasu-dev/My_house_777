@@ -14,7 +14,7 @@ scroll-behavior: smooth;
 overflow-y: auto;
 scrollbar-width: none;
 color: white;
-background: url("img/i349388.webp");
+background-image: url(/img/i349388.webp);
 z-index: -10;
 background: black
 &::-webkit-scrollbar{
