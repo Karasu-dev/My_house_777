@@ -163,7 +163,7 @@ export const Hero = () => {
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
-                <Img src="../img/aquillae.gif"/>
+                <Img src="img/aquillae.gif"/>
               </Right>
             </Container>
         </Section>
