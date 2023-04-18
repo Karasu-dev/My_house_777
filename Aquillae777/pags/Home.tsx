@@ -3,6 +3,7 @@ import Hero from "../Componentes/hero/hero";
 import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
+import Cubo from "../Componentes/Cubo/cube";
 import styled from "styled-components";
 
 
@@ -16,7 +17,7 @@ scrollbar-width: none;
 color: white;
 background: url(../img/i349388.webp);
 z-index: -10;
-background: black;
+background: black
 &::-webkit-scrollbar{
   display: none;
 }`;

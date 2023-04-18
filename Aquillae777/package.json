@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.65.3",
+    "@react-three/fiber": "^8.12.1",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -16,9 +18,11 @@
     "react-icons": "^4.8.0",
     "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0",
+    "react-simple-maps": "^3.0.0",
     "sass": "^1.59.3",
     "styled": "^1.0.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "three": "^0.151.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

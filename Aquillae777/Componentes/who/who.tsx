@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
+import Cubo from "../Cubo/cube" 
 
 
 const text = [
@@ -41,6 +42,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
+
+animation: left 1s infinite ease alternate ;
+ @keyframes left {
+  to {
+    transform: translateY(100px);
+  }
+}
 
 @media only screen and (max-width: 768px) {
   flex: 1;
@@ -110,6 +118,8 @@ animation: animate 7s  infinite ease alternate;
 }
 `;
 
+;
+
 
 
 export const Who = () => {
@@ -118,6 +128,7 @@ export const Who = () => {
         <Section>
             <Container>
               <Left> 
+                <Cubo/>
               </Left>
               <Right> 
                 <Title> Aquillae777</Title>
