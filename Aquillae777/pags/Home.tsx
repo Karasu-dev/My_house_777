@@ -3,7 +3,6 @@ import Hero from "../Componentes/hero/hero";
 import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
-import Cubo from "../Componentes/Cubo/cube";
 import styled from "styled-components";
 
 
@@ -15,7 +14,7 @@ scroll-behavior: smooth;
 overflow-y: auto;
 scrollbar-width: none;
 color: white;
-background: url(../img/6481298.jpg);
+background: url("../img/6481298.jpg");
 z-index: -10;
 background: black
 &::-webkit-scrollbar{
