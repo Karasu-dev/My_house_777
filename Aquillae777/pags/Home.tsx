@@ -4,6 +4,7 @@ import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
 import styled from "styled-components";
+import Img from "../../Img/i349388.webp"
 
 
 
@@ -14,7 +15,7 @@ scroll-behavior: smooth;
 overflow-y: auto;
 scrollbar-width: none;
 color: white;
-background: url(Public/i349388.webp);
+background: url(${Img});
 &::-webkit-scrollbar{
   display: none;
 }`;

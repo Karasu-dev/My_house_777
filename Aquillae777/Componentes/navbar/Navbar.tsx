@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import "./style.scss";
-import {BrowserRouter, To, Link, Outlet} from "react-router-dom"
 
 
 const Section = styled.div`
@@ -40,7 +39,8 @@ const Lista = styled.ul`
   gap: 20px;
   list-style: none;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500cd
+    px) {
     display: none;
   }
 `;
@@ -133,7 +133,6 @@ const NavBar = () => {
             <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
             <button    className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span>
             </button>
-            <Outlet/>
           </Lista>
         </Links>
         <DropdownContainer>
@@ -142,19 +141,6 @@ const NavBar = () => {
             <DropdownLink href="#">Link 1</DropdownLink>
             <DropdownLink href="#">Link 2</DropdownLink>
             <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
-
           </DropdownContent>
         </DropdownContainer>
       </Container>
