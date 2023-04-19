@@ -14,9 +14,7 @@ scroll-behavior: smooth;
 overflow-y: auto;
 scrollbar-width: none;
 color: white;
-background: url("Aquillae777/img/i349388.webp");
-z-index: -10;
-background: black
+background: url(Public/i349388.webp);
 &::-webkit-scrollbar{
   display: none;
 }`;
@@ -35,11 +33,6 @@ const Home = () => {
             <Contact />
 
         </Container>
-
-
-
-
-
 
     )
 }
