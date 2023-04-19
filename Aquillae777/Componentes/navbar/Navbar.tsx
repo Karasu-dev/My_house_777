@@ -19,41 +19,17 @@ const Container = styled.div`
   padding: 10px 0px;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 100px;
     padding: 10px;
   }
 `;
 
-const Links = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 50px;
+const ContainerCYPER = styled.div` 
+display: block;
+
+
+
 `;
-
-/*const Logo = styled.img`
-  height: 80px;
-`;*/
-
-const Lista = styled.ul`
-  display: flex;
-  gap: 20px;
-  list-style: none;
-
-  @media only screen and (max-width: 500cd
-    px) {
-    display: none;
-  }
-`;
-
-const LinstsItem = styled.li`
-  cursor: pointer;
-  &:hover {
-    color: blue;
-  }
-`;
-
-
-
 const DropdownButton = styled.button`
 --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
 --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -87,7 +63,6 @@ min-width: 200px;
 height: 50px;
 line-height: 50px;
 transition:    background 0.1s;
-
 
 `;
 
@@ -128,14 +103,9 @@ const NavBar = () => {
   return (
     <Section>
       <Container>
-        <Links>
-          <Lista>
-            <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-            <button    className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span>
-            </button>
-          </Lista>
-        </Links>
-        <DropdownContainer>
+      <ContainerCYPER> <button className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
+            <button   className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span></button>
+            <DropdownContainer>
           <DropdownButton>Dropdown</DropdownButton>
           <DropdownContent>
             <DropdownLink href="#">Link 1</DropdownLink>
@@ -143,6 +113,9 @@ const NavBar = () => {
             <DropdownLink href="#">Link 3</DropdownLink>
           </DropdownContent>
         </DropdownContainer>
+       </ContainerCYPER>
+    
+  
       </Container>
     </Section>
 
