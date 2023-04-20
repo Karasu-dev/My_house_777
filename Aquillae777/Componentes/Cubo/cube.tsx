@@ -74,25 +74,25 @@ const Cubo = () => {
          <Canvas>
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
-        <Box position={[-1.2, 0, 0]} />
+        <Box position={[1, 0, 0]} />
 
         <pointLight position={[5, 5, 5]} />
-        <Box2 position={[-1.2, 0, 0]} />
+        <Box2 position={[1, 0, 0]} />
 
 
         <pointLight position={[5, 5, 5]} />
-        <Box3 position={[-1.2, 0, 0]} />
+        <Box3 position={[1, 0, 0]} />
 
 
         <pointLight position={[20, 20, 20]} />
-        <Box position={[-1.2, 1, 0]} />
+        <Box position={[1, 1, 0]} />
 
         <pointLight position={[30, 30, 30]} />
-        <Box2 position={[-1.2, 1, 0]} />
+        <Box2 position={[1, 1, 0]} />
 
 
         <pointLight position={[40, 50, 60]} />
-        <Box3 position={[-1.2, 1, 0]} />
+        <Box3 position={[1, 1, 0]} />
 
         
 
