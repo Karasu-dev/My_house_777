@@ -4,6 +4,8 @@ import NavBar from "../navbar/Navbar";
 import Who from "../who/who";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
+import IMG from "../../../Img/aquillae.webp"
+
 
 
 
@@ -163,7 +165,7 @@ export const Hero = () => {
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
-                <Img src="Public/aquillae.webp"/>
+                <Img src={IMG}/>
               </Right>
             </Container>
         </Section>
