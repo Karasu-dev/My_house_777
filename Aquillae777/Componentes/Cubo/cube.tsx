@@ -6,8 +6,9 @@ import { Canvas, useFrame, ThreeElements } from '@react-three/fiber'
 function Box(props: ThreeElements['mesh']) {
   const mesh = useRef<THREE.Mesh>(null!)
   const [hovered, setHover] = useState(false)
-  const [active, setActive] = useState(false)
-  useFrame((state, delta) => (mesh.current.rotation.x += delta))
+  const [active, setActive] = useState(true)
+  useFrame((state, delta) => (mesh.current.rotation.y += delta));
+
   return (
     <mesh
       {...props}
@@ -17,10 +18,55 @@ function Box(props: ThreeElements['mesh']) {
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
       <boxGeometry args={[1,1,1]} />
-      <meshStandardMaterial color={hovered ? 'black' : 'blue'} />
+      <meshStandardMaterial color={hovered ? 'white' : 'black' } />
     </mesh>
   )
 }
+
+
+function Box2(props: ThreeElements['mesh']) {
+  const mesh = useRef<THREE.Mesh>(null!)
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(true)
+  useFrame((state, delta) => (mesh.current.rotation.z += delta));
+
+  return (
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? 1 : 1}
+      onClick={(event) => setActive(!active)}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}>
+      <boxGeometry args={[1,1,1]} />
+      <meshStandardMaterial color={hovered ? 'white' : 'black' } />
+    </mesh>
+  )
+}
+
+
+function Box3(props: ThreeElements['mesh']) {
+  const mesh = useRef<THREE.Mesh>(null!)
+  const [hovered, setHover] = useState(false)
+  const [active, setActive] = useState(true)
+  useFrame((state, delta) => (mesh.current.rotation.x += delta));
+
+  return (
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={active ? 1 : 1}
+      onClick={(event) => setActive(!active)}
+      onPointerOver={(event) => setHover(true)}
+      onPointerOut={(event) => setHover(false)}>
+      <boxGeometry args={[1,1,1]} />
+      <meshStandardMaterial color={hovered ? 'white' : 'black' } />
+    </mesh>
+  )
+}
+
+
+
 
 
 const Cubo = () => { 
@@ -29,7 +75,28 @@ const Cubo = () => {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         <Box position={[-1.2, 0, 0]} />
-        <Box position={[1.2, 0, 0]} />
+
+        <pointLight position={[5, 5, 5]} />
+        <Box2 position={[-1.2, 0, 0]} />
+
+
+        <pointLight position={[5, 5, 5]} />
+        <Box3 position={[-1.2, 0, 0]} />
+
+
+        <pointLight position={[20, 20, 20]} />
+        <Box position={[-1.2, 1, 0]} />
+
+        <pointLight position={[30, 30, 30]} />
+        <Box2 position={[-1.2, 1, 0]} />
+
+
+        <pointLight position={[40, 50, 60]} />
+        <Box3 position={[-1.2, 1, 0]} />
+
+        
+
+        
         
       </Canvas>)
 
