@@ -7,7 +7,7 @@ const Section = styled.div`
   justify-content: center;
 
   @media only screen and (max-width: 600px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -19,13 +19,14 @@ const Container = styled.div`
   padding: 10px 0px;
 
   @media only screen and (max-width: 600px) {
-    width: 100px;
-    padding: 10px;
+    width: 1000px;
+    padding: 1px;
   }
 `;
 
 const ContainerCYPER = styled.div` 
-display: block;
+display: inline-block;
+whidth: 50px;
 
 
 
