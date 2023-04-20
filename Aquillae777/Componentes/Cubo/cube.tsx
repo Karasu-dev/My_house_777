@@ -60,7 +60,7 @@ function Box3(props: ThreeElements['mesh']) {
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}>
       <boxGeometry args={[1,1,1]} />
-      <meshStandardMaterial color={hovered ? 'white' : 'black' } />
+      <meshStandardMaterial color={hovered ? 'black' : 'black' } />
     </mesh>
   )
 }
