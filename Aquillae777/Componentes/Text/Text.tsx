@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+/*import React, { useState } from 'react'
 import { useTrail, a } from '@react-spring/web'
 
 import styles from './styles.module.css'
@@ -36,3 +36,4 @@ export default function App() {
     </div>
   )
 }
+*/ 
