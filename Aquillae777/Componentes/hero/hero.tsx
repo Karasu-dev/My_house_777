@@ -6,9 +6,6 @@ import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/aquillae.webp"
 
-
-
-
 const Section = styled.div`
 height: 100vh;
 scroll-snap-align: center;
@@ -17,7 +14,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   height: 200vh;
 }
 `;
@@ -29,7 +26,7 @@ width: 1400px;
 display: flex;
 justify-content: space-between;
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -44,9 +41,10 @@ flex-direction: column;
 justify-content: center;
 gap: 20px;
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   flex: 1;
   align-items: center;
+
 }
 `;
 
@@ -149,6 +147,7 @@ animation: animate 2s infinite ease alternate;
 
 `;
 
+
 export const Hero = () => {
     return (
 
@@ -165,7 +164,7 @@ export const Hero = () => {
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
-                <Img src={IMG}/>
+                <Img src={IMG} className="circle"/>
               </Right>
             </Container>
         </Section>
