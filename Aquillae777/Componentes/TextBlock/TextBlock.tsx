@@ -1,8 +1,6 @@
-/*  import { useRef } from 'react';
-  import {Styled} from "styled-components";
-
-  import { useTrail, animated } from '@react-spring/web';
-import React from 'react'
+/*  import { useRef } from 'react'
+import { styled } from "styled-components"
+import { useTrail, animated } from '@react-spring/web'
 
 const AppContainer  = styled('div', {
   width: '100vw',
@@ -37,13 +35,13 @@ const SharedStyles  = {
   backfaceVisibility: 'hidden',
 }
 
-const FrontBox = styled(animated.div, {
+const FrontBox = s tyled(animated.div, {
   ...SharedStyles,
   backgroundColor: '#fafafa',
   border: 'solid 2px #1a1a1a',
 })
 
-const BackBox = styled(animated.div, {
+const BackBox = st yled(animated.div, {
   ...SharedStyles,
   backgroundColor: '#6cab64',
   border: 'solid 2px #6cab64',

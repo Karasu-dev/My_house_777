@@ -5,7 +5,6 @@ import Who from "../who/who";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/aquillae.webp"
-import Text from "../Text/Text";
 
 const Section = styled.div`
 height: 100vh;
@@ -71,6 +70,56 @@ font-size: 74px
 }
 `;
 
+const Whatwedo = styled.div`
+   display: flex;
+   aling-items: center;
+   gap: 10px
+   
+
+`;
+
+const SUbtitle = styled.h2`
+font-size: 20px;
+color: white;
+animation: SUbtitle 5s infinite ease alternate ;
+@keyframes SUbtitle  {
+  to {
+    transform: translateY(40px);
+  }
+}
+
+`;
+
+
+const Desc = styled.p`
+ font-size: 20px;
+ @media only screen(max-witdh: 768px){
+  padding: 20px;
+  text-aling: center;
+
+`;
+
+const Button = styled.button`
+background-color: black;
+color: white;
+width: 120px;
+height: 30px;
+border-radius: 10px;
+box-shadow: 4px 3px lightblue;
+animation: button 5s infinite ease alternate ;
+@keyframes button {
+  to {
+    transform: translateY(50px);
+  }
+}
+
+`;
+
+const Line = styled.img`
+height: 5px;
+
+`;
+
 const Img = styled.img`
 width: 800px;
 height: 600px;
@@ -106,7 +155,13 @@ export const Hero = () => {
             <NavBar/>
             <Container>
               <Left> 
-                  <Text/>
+                <Title> Aquillae7</Title>
+                <Whatwedo>
+                  <Line src=""/>
+                  <SUbtitle> Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos </SUbtitle>
+                </Whatwedo>
+                <Desc>  </Desc>
+                <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
                 <Img src={IMG} className="circle"/>

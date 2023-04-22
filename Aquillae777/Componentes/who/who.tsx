@@ -5,7 +5,7 @@ import Cubo from "../Cubo/cube"
 
 
 const text = [
-" Nós nunca paramos o movimento constante gera formas novas, vamos lá ",
+"Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos ",
 ];
 
 
