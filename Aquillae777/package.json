@@ -21,6 +21,8 @@
     "react-simple-maps": "^3.0.0",
     "react-spring": "^9.7.1",
     "sass": "^1.59.3",
+    "style": "^0.0.3",
+    "style-module": "^1.0.0",
     "styled": "^1.0.0",
     "styled-components": "^5.3.9",
     "styles": "^0.2.1",

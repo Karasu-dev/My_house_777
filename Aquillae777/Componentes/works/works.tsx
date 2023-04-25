@@ -1,4 +1,5 @@
 import React from "react-dom";
+import Cubo from "../Cubo/cube";
 import styled from "styled-components";
 
 
@@ -102,6 +103,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
+                  <Cubo/>
                 </Right>
 
             </Container>

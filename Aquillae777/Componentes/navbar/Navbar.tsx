@@ -1,5 +1,6 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import "./style.scss";
+
 
 
 const Section = styled.div`
@@ -27,8 +28,6 @@ const Container = styled.div`
 const ContainerCYPER = styled.div` 
 display: inline-block;
 whidth: 50px;
-
-
 
 `;
 const DropdownButton = styled.button`
@@ -100,14 +99,138 @@ const DropdownContainer = styled.div`
 
 
 
+const Key = keyframes`
+
+  0% {
+      transform: translate(0)
+  }
+  20% {
+      transform: translate(-5px, 5px)
+  }
+  40% {
+      transform: translate(-5px, -5px)
+  }
+  60% {
+      transform: translate(5px, 5px)
+  }
+  80% {
+      transform: translate(5px, -5px)
+  }
+  to {
+      transform: translate(0)
+  }
+}`
+
+const Cyper = styled.button`
+cursor: pointer;
+background: transparent;
+text-transform: uppercase;
+outline: transparent;
+letter-spacing: 10px;
+position: relative;
+border: 1;
+min-width: 200px;
+height: 50px;
+line-height: 50px;
+transition:  background 0.1s;
+transform: translate(-50%, -50%);
+margin: 10px;
+padding: 1px;
+text-decoration: none;
+color: #fff;
+
+  &:before, &:after {
+      display: block;
+      content: 'Home';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+  } &:after {
+      color: #f0f;
+      z-index: -2;
+  } &:before {
+      color: #0ff;
+      z-index: -1;
+  }
+}
+  {
+  &:before {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) both infinite
+  }
+  &:after {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+  }
+}
+}`
+
+
+
+
+
+const Cyper2 = styled.button`
+cursor: pointer;
+background: transparent;
+text-transform: uppercase;
+outline: transparent;
+letter-spacing: 10px;
+position: relative;
+border: 1;
+min-width: 200px;
+height: 50px;
+line-height: 50px;
+transition:  background 0.10s;
+transform: translate(-50%, -50%);
+margin: 10px;
+padding: 1px;
+text-decoration: none;
+color: #fff;
+
+  &:before, &:after {
+      display: block;
+      content: 'Conta';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+  } &:after {
+      color: #f0f;
+      z-index: -2;
+  } &:before {
+      color: #0ff;
+      z-index: -1;
+  }
+}
+  {
+  &:before {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) both infinite
+  }
+  &:after {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+  }
+}
+}
+`
+
+
+
+
+
+
+
+
 const NavBar = () => {
   return (
     <Section>
       <Container>
-      <ContainerCYPER> <button className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-            <button   className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span></button>
-       </ContainerCYPER>
-    
+      <ContainerCYPER> 
+       <Cyper><span>Home</span></Cyper>
+       <Cyper2><span>Contact</span></Cyper2>
+      </ContainerCYPER>
       <DropdownContainer>
           <DropdownButton>Dropdown</DropdownButton>
           <DropdownContent>
