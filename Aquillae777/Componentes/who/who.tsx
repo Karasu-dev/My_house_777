@@ -3,7 +3,6 @@ import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 import Cubo from "../Cubo/cube" 
 
-
 const text = [
 "Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos ",
 ];

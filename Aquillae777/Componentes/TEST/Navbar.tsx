@@ -1,5 +1,6 @@
 import React from "react-dom";
 import styled, { keyframes} from 'styled-components';
+import Globo from "../Word/Globlo";
 
 
 
@@ -9,6 +10,7 @@ import styled, { keyframes} from 'styled-components';
 const NavBar = () => {
     return(
         <> 
+    
       
        
         </>
