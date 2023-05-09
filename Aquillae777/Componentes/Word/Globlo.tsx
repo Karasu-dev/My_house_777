@@ -12,7 +12,7 @@ const color = "#111111";
 
 const Icosahedron = () => (
   <mesh rotation-x={0.35}>
-    <icosahedronGeometry args={[1, 0]} />
+    <icosahedronGeometry args={[1, 1,]} />
     <meshBasicMaterial wireframe color={color} />
   </mesh>
 );
@@ -26,26 +26,26 @@ const Star = ({ p }: { p: number }) => {
       degreesToRadians(80),
       degreesToRadians(100),
       Math.random()
-    );
+    );0
     const xAngle = degreesToRadians(360) * p;
     ref.current!.position.setFromSphericalCoords(distance, yAngle, xAngle);
   });
 
   return (
     <mesh ref={ref}>
-      <boxGeometry args={[0.05, 0.05, 0.05]} />
+      <boxGeometry args={[0.1, 0.05, 0.05]} />
       <meshBasicMaterial wireframe color={color} />
     </mesh>
   );
 };
 
-function Scene({ numStars = 100 }) {
+function Scene({ numStars = 30 }) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
     scrollYProgress,
     [0, 1],
-    [0.001, degreesToRadians(180)]
+    [0.10, degreesToRadians(150)]
   );
   const distance = useTransform(scrollYProgress, [0, 1], [10, 3]);
   const time = useTime();
@@ -54,13 +54,13 @@ function Scene({ numStars = 100 }) {
     camera.position.setFromSphericalCoords(
       distance.get(),
       yAngle.get(),
-      time.get() * 0.0005
+      time.get() * 0.00050
     );
     camera.updateProjectionMatrix();
-    camera.lookAt(0, 0, 0);
+    camera.lookAt(1, 1, 1);
   });
 
-  useLayoutEffect(() => gl.setPixelRatio(0.3));
+  useLayoutEffect(() => gl.setPixelRatio(1));
 
   const stars = [];
   for (let i = 0; i < numStars; i++) {
@@ -72,10 +72,11 @@ function Scene({ numStars = 100 }) {
       <Icosahedron />
       {stars}
     </>
-  );
+  );0
 }
 
-export default function App() {
+ const Globlo = () => {
+  
   return (
     <div className="container">
       <Canvas gl={{ antialias: false }}>
@@ -85,3 +86,5 @@ export default function App() {
   );
 }
 
+
+export default Globlo;

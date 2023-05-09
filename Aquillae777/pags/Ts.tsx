@@ -11,7 +11,8 @@ background: black;
 const Ts = () => {
     return(
         <Container>
-            <NavBar/>
+            
+            <Globo></Globo>
             
         
         </Container>

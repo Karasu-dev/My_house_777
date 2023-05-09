@@ -20,7 +20,7 @@
     "react-icons": "^4.8.0",
     "react-router": "^6.9.0",
     "react-router-dom": "^6.9.0",
-    "react-simple-maps": "^3.0.0",
+    "react-simple-maps": "^1.0.0",
     "react-spring": "^9.7.1",
     "sass": "^1.59.3",
     "style": "^0.0.3",
@@ -28,7 +28,8 @@
     "styled": "^1.0.0",
     "styled-components": "^5.3.9",
     "styles": "^0.2.1",
-    "three": "^0.151.3"
+    "three": "^0.151.3",
+    "update": "^0.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

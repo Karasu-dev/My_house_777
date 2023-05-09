@@ -5,6 +5,7 @@ import Whors from "../Componentes/works/works";
 import Contact from "../Componentes/contact/Contact";
 import styled from "styled-components";
 import Img from "../../Img/i349388.webp"
+import Globlo from "../Componentes/Word/Globlo";
 
 
 
@@ -32,6 +33,8 @@ const Home = () => {
             <Whors />
 
             <Contact />
+
+            <Globlo/>
 
         </Container>
 
