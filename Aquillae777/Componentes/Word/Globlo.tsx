@@ -13,7 +13,7 @@ import { Mesh } from "three";
 const color = "#111111";
 
 const Icosahedron = () => (
-  <mesh rotation-x={0.35}>
+  <mesh rotation-x={1} rotation-rotateY={1}>
     <icosahedronGeometry args={[1, 1,]} />
     <meshBasicMaterial wireframe color={color} />
   </mesh>
@@ -36,7 +36,7 @@ const Star = ({ p }: { p: number }) => {
   return (
     <mesh ref={meshRef}>
       <boxGeometry args={[0.1, 0.05, 0.05]} />
-      <meshBasicMaterial wireframe color={color} />
+      <meshBasicMaterial wireframe color={color}/>
     </mesh>
   );
 };

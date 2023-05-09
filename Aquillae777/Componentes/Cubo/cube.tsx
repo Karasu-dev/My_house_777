@@ -99,12 +99,6 @@ const Cubo = () => {
 
      
 
-        
-
-        
-
-        
-        
       </Canvas>)
 
 }

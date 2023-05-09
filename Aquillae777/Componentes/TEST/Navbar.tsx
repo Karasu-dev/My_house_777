@@ -9,11 +9,7 @@ import Globo from "../Word/Globlo";
 
 const NavBar = () => {
     return(
-        <> 
-    
-      
-       
-        </>
+        <></>
     )
 
 }

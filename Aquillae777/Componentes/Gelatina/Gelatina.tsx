@@ -2,7 +2,7 @@ import * as React from 'react'
 import useMeasure from 'react-use-measure'
 import { useTrail, animated } from '@react-spring/web'
 
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 const fast = { tension: 1200, friction: 40 }
 const slow = { mass: 10, tension: 200, friction: 50 }
