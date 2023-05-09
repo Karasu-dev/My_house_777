@@ -1,3 +1,4 @@
+
 import React from "react-dom";
 import NavBar from "../navbar/Navbar";
 import Who from "../who/who";
@@ -163,7 +164,7 @@ export const Hero = () => {
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
-                <Img src={IMG} className="circle"/>
+                <Img src={IMG} />
               </Right>
             </Container>
         </Section>
