@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import "./style.scss";
-import {BrowserRouter , Routes, Route} from "react-router-dom";
-
 
 
 
@@ -32,8 +30,6 @@ display: inline-block;
 whidth: 50px;
 
 `;
-
-
 const DropdownButton = styled.button`
 --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
 --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
@@ -215,7 +211,8 @@ color: #fff;
   }
   &:after {
       animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
-  }}
+  }
+}
 }
 `
 
@@ -230,8 +227,9 @@ const NavBar = () => {
   return (
     <Section>
       <Container>
-      <ContainerCYPER> <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-      <button className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span></button>
+      <ContainerCYPER> 
+       <Cyper><span>Home</span></Cyper>
+       <Cyper2><span>Contact</span></Cyper2>
       </ContainerCYPER>
       <DropdownContainer>
           <DropdownButton>Dropdown</DropdownButton>

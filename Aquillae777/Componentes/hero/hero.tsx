@@ -4,7 +4,7 @@ import NavBar from "../navbar/Navbar";
 import Who from "../who/who";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
-import IMG from "../../../Img/Meu projeto.png"
+import IMG from "../../../Img/aquillae.webp"
 
 const Section = styled.div`
 height: 100vh;
@@ -155,7 +155,7 @@ export const Hero = () => {
             <NavBar/>
             <Container>
               <Left> 
-                <Title> Esse site está em estado de desenvolvimento !!!</Title>
+                <Title> Aquillae7</Title>
                 <Whatwedo>
                   <Line src=""/>
                   <SUbtitle> Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos </SUbtitle>
