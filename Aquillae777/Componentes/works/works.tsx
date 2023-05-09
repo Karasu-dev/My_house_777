@@ -103,7 +103,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
-                  <Cubo/>
+                
                 </Right>
 
             </Container>

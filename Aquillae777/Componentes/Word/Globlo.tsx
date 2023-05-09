@@ -6,6 +6,8 @@ import { degreesToRadians, progress, mix } from "popmotion";
 import * as THREE from 'three'
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame,  } from '@react-three/fiber'
+import { Mesh } from "three";
+
 
 
 const color = "#111111";
@@ -18,7 +20,7 @@ const Icosahedron = () => (
 );
 
 const Star = ({ p }: { p: number }) => {
-  const ref = useRef<THREE.Object3D>(null);
+  const meshRef = useRef<Mesh>(null);
 
   useLayoutEffect(() => {
     const distance = mix(2, 3.5, Math.random());
@@ -28,11 +30,11 @@ const Star = ({ p }: { p: number }) => {
       Math.random()
     );0
     const xAngle = degreesToRadians(360) * p;
-    ref.current!.position.setFromSphericalCoords(distance, yAngle, xAngle);
+    meshRef.current!.position.setFromSphericalCoords(distance, yAngle, xAngle);
   });
 
   return (
-    <mesh ref={ref}>
+    <mesh ref={meshRef}>
       <boxGeometry args={[0.1, 0.05, 0.05]} />
       <meshBasicMaterial wireframe color={color} />
     </mesh>
