@@ -1,20 +1,8 @@
-body {
-    --black: #000000;
-    --ash-black: #222;
-    --white: #fafafa;
-    --sky: #00ccff;
-    --green: #22dddd;
-    --blue: #1300ff;
-    --dusk: #6600ff;
-    --purple: #9900ff;
-    --pink: #ff0066;
-    --red: #fe0222;
-    --orange: #fd7702;
-    --yellow: #ffbb00;
-  }
+
   
   #root {
     height: 1000vh;
+    
   }
  
 
@@ -38,5 +26,5 @@ body {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: pixelated;
     image-rendering: optimize-contrast;
+    
   }
-  

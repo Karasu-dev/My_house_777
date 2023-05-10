@@ -7,14 +7,17 @@ import * as THREE from 'three'
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame,  } from '@react-three/fiber'
 import { Mesh } from "three";
+import styled from "styled-components";
 
 
 
-const color = "#111111";
+const color = "yellow";
+
+const color2 = "blue"; 
 
 const Icosahedron = () => (
-  <mesh rotation-x={1} rotation-rotateY={1}>
-    <icosahedronGeometry args={[1, 1,]} />
+  <mesh rotation-x={10} rotation-y={10} >
+    <icosahedronGeometry args={[1, 10,]} />
     <meshBasicMaterial wireframe color={color} />
   </mesh>
 );
@@ -36,12 +39,12 @@ const Star = ({ p }: { p: number }) => {
   return (
     <mesh ref={meshRef}>
       <boxGeometry args={[0.1, 0.05, 0.05]} />
-      <meshBasicMaterial wireframe color={color}/>
+      <meshBasicMaterial wireframe color={color2}/>
     </mesh>
   );
 };
 
-function Scene({ numStars = 30 }) {
+function Scene({ numStars = 10 }) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
@@ -49,7 +52,7 @@ function Scene({ numStars = 30 }) {
     [0, 1],
     [0.10, degreesToRadians(150)]
   );
-  const distance = useTransform(scrollYProgress, [0, 1], [10, 3]);
+  const distance = useTransform(scrollYProgress, [10, 10], [10, 3]);
   const time = useTime();
 
   useFrame(({ camera }) => {
@@ -77,14 +80,26 @@ function Scene({ numStars = 30 }) {
   );0
 }
 
+const Container = styled.div`
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: -1000;
+
+`;
+
  const Globlo = () => {
   
   return (
-    <div className="container">
-      <Canvas gl={{ antialias: false }}>
-        <Scene />
+    <Container>
+        <Canvas gl={{ antialias: true}}>
+        <Scene  />
       </Canvas>
-    </div>
+    </Container>
+     
+   
   );
 }
 
