@@ -19,7 +19,7 @@ const color2 = "white";
 
 const Icosahedron = () => (
   <mesh rotation-x={10} rotation-y={10} >
-    <icosahedronGeometry args={[1, 10,]} />
+    <icosahedronGeometry args={[1, 9,]} />
     <meshBasicMaterial wireframe color={color} />
   </mesh>
 );
@@ -54,7 +54,7 @@ function Scene({ numStars = 30 }) {
     [0, 1],
     [0.10, degreesToRadians(150)]
   );
-  const distance = useTransform(scrollYProgress, [9, 5], [10, 3]);
+  const distance = useTransform(scrollYProgress, [9, 10], [10, 3]);
   const time = useTime();
 
   useFrame(({ camera }) => {

@@ -1,4 +1,4 @@
-import * as React from 'react'
+/*import * as React from 'react'
 import useMeasure from 'react-use-measure'
 import { useTrail, animated } from '@react-spring/web'
 
@@ -39,3 +39,4 @@ export default function App() {
     </div>
   )
 }
+*/
