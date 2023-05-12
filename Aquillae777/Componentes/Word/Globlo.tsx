@@ -8,12 +8,14 @@ import React, { useRef, useState } from 'react'
 import { Canvas, useFrame,  } from '@react-three/fiber'
 import { Mesh } from "three";
 import styled from "styled-components";
+import Img from "../../../Img/i349388.webp";
+
 
 
 
 const color = "yellow";
 
-const color2 = "blue"; 
+const color2 = "white"; 
 
 const Icosahedron = () => (
   <mesh rotation-x={10} rotation-y={10} >
@@ -44,7 +46,7 @@ const Star = ({ p }: { p: number }) => {
   );
 };
 
-function Scene({ numStars = 10 }) {
+function Scene({ numStars = 30 }) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
@@ -52,7 +54,7 @@ function Scene({ numStars = 10 }) {
     [0, 1],
     [0.10, degreesToRadians(150)]
   );
-  const distance = useTransform(scrollYProgress, [10, 10], [10, 3]);
+  const distance = useTransform(scrollYProgress, [9, 5], [10, 3]);
   const time = useTime();
 
   useFrame(({ camera }) => {
@@ -87,6 +89,8 @@ right: 0;
 bottom: 0;
 left: 0;
 z-index: -1000;
+background: url(${Img});
+
 
 `;
 

@@ -32,7 +32,7 @@ const Home = () => {
 
             <Whors />
 
-            <Contact />
+          
 
             <Globlo/>
 
