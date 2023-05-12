@@ -1,7 +1,6 @@
 import React from "react-dom";
 import Cubo from "../Cubo/cube";
 import styled from "styled-components";
-import Gelatina from "./../Gelatina/Gelatina";
 
 
 
