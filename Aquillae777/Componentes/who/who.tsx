@@ -26,7 +26,6 @@ scroll-snap-align: center;
 width: 1400px;
 display: flex;
 justify-content: space-between;
-
 @media only screen and (max-width: 768px) {
   width: 100%;
   flex-direction: column;
@@ -41,7 +40,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
-
 animation: left 1s infinite ease alternate ;
  @keyframes left {
   to {
@@ -61,7 +59,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 20px;
-
 @media only screen and (max-width: 768px) {
   flex: 1;
   width: 100%;

@@ -7,8 +7,6 @@ import styled from "styled-components";
 import Img from "../../Img/i349388.webp"
 import Globlo from "../Componentes/Word/Globlo";
 
-
-
 const Container = styled.div`
 height: auto;
 scroll-snap-type: y mandatory;
@@ -23,22 +21,12 @@ background: url(${Img});
 
 const Home = () => {
     return (
-
         <Container>
-
             <Hero />
-
             <Who />
-
             <Whors />
-
-            <Contact />
-
             <Globlo/>
-
         </Container>
-
     )
 }
-
 export default Home;

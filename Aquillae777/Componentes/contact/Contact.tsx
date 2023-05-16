@@ -91,6 +91,16 @@ const Right = styled.div`
   }
 `;
 
+ const handleSumit =e => {
+
+  e.preventDefault()
+
+  emailjs.sendForm('')
+
+}
+
+
+
 
 export const Contact = () => {
   return (
