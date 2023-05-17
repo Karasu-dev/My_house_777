@@ -124,13 +124,11 @@ export const Who = () => {
         <Section>
             <Container>
               <Left> 
-                <Cubo/>
+          
               </Left>
               <Right> 
                 <Title> Aquillae777</Title>
-                <Whatwedo>
-                  {text.map((item) => ( <SUbtitle> {text}</SUbtitle>))}                 
-                </Whatwedo>
+                  {text.map((item) => ( <SUbtitle> {text}</SUbtitle>))}                  
                 <Button> GitHub <GoOctoface/></Button>
               </Right>
             </Container>

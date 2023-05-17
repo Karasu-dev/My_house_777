@@ -49,7 +49,7 @@ const Star = ({ p }: { p: number }) => {
     </mesh>
   );
 };
-function Scene({ numStars = 500 }) {
+function Scene({ numStars = 500}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
@@ -63,7 +63,7 @@ function Scene({ numStars = 500 }) {
     camera.position.setFromSphericalCoords(
       distance.get(),
       yAngle.get(),
-      time.get() * 0.00050
+      time.get() * 0.001
     );
     camera.updateProjectionMatrix();
     camera.lookAt(1, 1, 1);

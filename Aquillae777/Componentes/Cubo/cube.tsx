@@ -87,15 +87,7 @@ const Cubo = () => {
         <Box3 position={[-1, 1, 0]} />
 
 
-        <pointLight position={[20, 20, 20]} />
-        <Box position={[1, 2, 0]} />
-
-        <pointLight position={[30, 30, 30]} />
-        <Box2 position={[1, 2, 0]} />
-
-
-        <pointLight position={[40, 50, 60]} />
-        <Box3 position={[1, 2, 0]} />
+      
 
      
 
