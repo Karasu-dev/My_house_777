@@ -5,6 +5,8 @@ import Who from "../who/who";
 import styled from "styled-components";
 import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/Meu projeto.png"
+import { Canvas } from "@react-three/fiber";
+import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 
 const Section = styled.div`
 height: 100vh;
@@ -147,6 +149,9 @@ animation: animate 2s infinite ease alternate;
 
 `;
 
+const color = "yellow";
+const color3 = "";
+const color2 = "white";  
 
 export const Hero = () => {
     return (
@@ -164,7 +169,22 @@ export const Hero = () => {
                 <Button> GitHub <GoOctoface/></Button>
               </Left>
               <Right> 
-                <Img src={IMG} />
+              <Canvas>
+       
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={0.1} />
+              <directionalLight position={[7, 7, 7]} />
+              <Sphere args={[1, 100, 200]} scale={1.9}>
+                <MeshDistortMaterial
+                  color="#92672E"
+                  attach="material"
+                  distort={0.5}
+                  speed={7}
+                />
+              </Sphere>          
+          </Canvas>
+          <Img src={IMG} />
+
               </Right>
             </Container>
         </Section>

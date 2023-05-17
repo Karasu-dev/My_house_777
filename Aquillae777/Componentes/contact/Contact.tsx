@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 
 
-
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -96,13 +95,15 @@ const Right = styled.div`
 
 
 export const Contact = () => {
+
+      
   return (
     <Section>
       <Container>
         <Left>
           <Form>
             <Title> Contato </Title>
-            <Form>
+            <Form  >
               <Input placeholder="Nome" />
               <Input placeholder="Email" />
               <TextArea placeholder="Olá..." />
