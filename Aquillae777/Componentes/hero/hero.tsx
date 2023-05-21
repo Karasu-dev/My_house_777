@@ -133,6 +133,7 @@ left: 0;
 right: 0;
 margin: auto;
 animation: animate 2s infinite ease alternate;
+pointer-events: none;
 
 @media only screen and (max-width: 768px) {
   width: 300px;
@@ -163,7 +164,7 @@ export const Hero = () => {
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 <Whatwedo>
                   <Line src=""/>
-                  <SUbtitle> Este site vai conter todos os meus projetos que serão postados mensalmente aqui, e no botão a baixo pode baixar e utilizar esses projetos </SUbtitle>
+                  <SUbtitle> Este Site está em processo de desenvolvimento estou desenvolvendo o front-end, em duas semanas todas as funcionalidades será adicionado    </SUbtitle>
                 </Whatwedo>
                 <Desc>  </Desc>
                 <Button> GitHub <GoOctoface/></Button>

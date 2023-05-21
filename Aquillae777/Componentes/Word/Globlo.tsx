@@ -89,6 +89,7 @@ left: 0;
 z-index: -1000;
 background: url(${Img});
 `;
+
  const Globlo = () => {
   return (
     <Container>
@@ -99,3 +100,5 @@ background: url(${Img});
   );
 }
 export default Globlo;
+
+

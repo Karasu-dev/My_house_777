@@ -35,87 +35,6 @@ justify-content: space-between;
 }
 `;
 
-const Left = styled.div`
-flex: 2;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 20px;
-animation: left 1s infinite ease alternate ;
- @keyframes left {
-  to {
-    transform: translateY(100px);
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  flex: 1;
-  align-items: center;
-}
-`;
-
-const Right = styled.div`
-flex: 3;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 20px;
-@media only screen and (max-width: 768px) {
-  flex: 1;
-  width: 100%;
-}
-`;
-
-
-const Title = styled.h1`
-font-size: 74px
- @media only screen and (max-width: 768px){
-  text-aling: center;
- }
- animation: title 6s infinite ease alternate ;
- @keyframes title {
-  to {
-    transform: translateY(30px);
-  }
-}
-`;
-
-const Whatwedo = styled.div`
-   display: flex;
-   aling-items: center;
-   gap: 10px
-
-`;
-
-const SUbtitle = styled.h2`
-font-size: 20px;
-color: white;
-animation: animate 6s infinite ease alternate;
-@keyframe animate{
-  Subtitle{
-    transform: translateY(40px);
-  }
-}
-`;
-
-
-
-const Button = styled.button`
-background-color: black;
-color: white;
-width: 120px;
-height: 30px;
-border-radius: 10px;
-box-shadow: 4px 3px lightblue;
-animation: animate 7s  infinite ease alternate;
-@keyframe animate{
-  Button{
-    tranform: tranlateY(55px);
-  }
-}
-`;
-
-;
 
 
 
@@ -124,14 +43,7 @@ export const Who = () => {
 
         <Section>
             <Container>
-              <Left> 
-          
-              </Left>
-              <Right> 
-                <Title> Aquillae777</Title>
-                  {text.map((item) => ( <SUbtitle> {text}</SUbtitle>))}                  
-                <Button> GitHub <GoOctoface/></Button>
-              </Right>
+     
             </Container>
         </Section>
 
