@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from "../pags/Home";
+import Contact from "../pags/Contact";
+import Pjava from "../pags/Pjava";
+import PTSX from "../pags/PTSX";
 
-import Ts from "../pags/Ts";
-import Contact from '../Componentes/contact/Contact';
 
 import {BrowserRouter , Routes, Route} from "react-router-dom"
 
@@ -12,8 +13,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>}/>
-      <Route path="/Contato" element = {<Contact/>}/>
-      <Route path="/Ts" element={<Ts/>}/>
+      <Route path="/Contact" element={<Contact/>}/>
+      <Route path="/java" element = {<Pjava/>} />
+      <Route path = "/Tsx" element ={<PTSX/>}/> 
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -25,7 +25,6 @@ const Home = () => {
             <Hero />
             <Who />
             <Whors />
-            <Contact/>
             <Globlo/>
         </Container>
     )

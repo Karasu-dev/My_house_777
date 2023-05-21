@@ -13,22 +13,18 @@ import Img from "../../../Img/i349388.webp";
 const color = "yellow";
 const color3 = "";
 const color2 = "white"; 
+
 const Icosahedron = () => (
   <mesh rotation-x={10} rotation-y={10} >
-    <icosahedronGeometry args={[1, 9,]} />
+     <icosahedronGeometry args={[1, 9,]} />
     <meshBasicMaterial wireframe color={color} />
-    
+ 
   </mesh>
 );
 
+/*  
+    */
 
-const Icosahedron2 = () => (
-  <mesh rotation-x={10} rotation-y={10} >
-    <icosahedronGeometry args={[50, 5,]} />
-    <meshBasicMaterial wireframe color={color3} />
-    
-  </mesh>
-);
 const Star = ({ p }: { p: number }) => {
   const meshRef = useRef<Mesh>(null);
   useLayoutEffect(() => {
@@ -49,13 +45,13 @@ const Star = ({ p }: { p: number }) => {
     </mesh>
   );
 };
-function Scene({ numStars = 500}) {
+function Scene({ numStars = 700}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
     scrollYProgress,
     [0, 1],
-    [0.10, degreesToRadians(150)]
+    [1, degreesToRadians(260)]
   );
   const distance = useTransform(scrollYProgress, [9, 10], [10, 3]);
   const time = useTime();
@@ -63,7 +59,7 @@ function Scene({ numStars = 500}) {
     camera.position.setFromSphericalCoords(
       distance.get(),
       yAngle.get(),
-      time.get() * 0.001
+      time.get() * 0.0001
     );
     camera.updateProjectionMatrix();
     camera.lookAt(1, 1, 1);

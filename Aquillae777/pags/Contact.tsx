@@ -14,6 +14,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  background: black;
 `;
 
 const Left = styled.div`
@@ -92,31 +93,36 @@ const Right = styled.div`
 
 
 
+ 
 
 
-export const Contact = () => {
-
-      
-  return (
+const Contact = () => {
+ return(
     <Section>
-      <Container>
-        <Left>
-          <Form>
-            <Title> Contato </Title>
-            <Form  >
-              <Input placeholder="Nome" />
-              <Input placeholder="Email" />
-              <TextArea placeholder="Olá..." />
-            </Form>
-            <Button> enviar </Button>
+    <Container>
+      <Left>
+        <Form>
+          <Title> Contato </Title>
+          <Form  >
+            <Input placeholder="Nome" />
+            <Input placeholder="Email" />
+            <TextArea placeholder="Olá..." />
           </Form>
-        </Left>
-        <Right>
-        </Right>
-      </Container>
-    </Section>
+          <Button> enviar </Button>
+        </Form>
+      </Left>
+      <Right>
+      </Right>
+    </Container>
+  </Section>
+ )
 
-  )
-}
+};
 
 export default Contact;
+
+
+
+
+
+
