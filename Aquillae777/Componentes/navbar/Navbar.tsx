@@ -234,7 +234,7 @@ const NavBar = () => {
       <button className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span></button>
       </ContainerCYPER>
       <DropdownContainer>
-          <DropdownButton>Dropdown</DropdownButton>
+          <DropdownButton>Projetos geral</DropdownButton>
           <DropdownContent>
             <DropdownLink href="#">Link 1</DropdownLink>
             <DropdownLink href="#">Link 2</DropdownLink>

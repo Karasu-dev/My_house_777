@@ -164,7 +164,7 @@ export const Hero = () => {
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 <Whatwedo>
                   <Line src=""/>
-                  <SUbtitle> Este Site está em processo de desenvolvimento estou desenvolvendo o front-end, em duas semanas todas as funcionalidades será adicionado    </SUbtitle>
+                  <SUbtitle> Este Site está em processo de desenvolvimento estou desenvolvendo o front-end, em duas semanas todas as funcionalidades serão adicionadas  </SUbtitle>
                 </Whatwedo>
                 <Desc>  </Desc>
                 <Button> GitHub <GoOctoface/></Button>

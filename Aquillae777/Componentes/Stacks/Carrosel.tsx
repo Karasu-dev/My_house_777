@@ -2,11 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
+height: 100vh;
+scroll-snap-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+
+@media only screen and (max-width: 600px) {
+  height: 200vh;
+}
 
 `
 const Container = styled.div`
-display : inline-block ;
-
+height: 100%;
+scroll-snap-align: center;
+width: 1400px;
+display: flex;
+justify-content: space-between;
 
 `
 const List = styled.div`
@@ -66,6 +79,9 @@ overflow: hidden;
 
 `
 
+const Container2 = styled.div`
+`
+
 const Box3 = styled.div`
 flex: 0 0 22vw;
 height: 22vw;list-style-type: none;
@@ -75,7 +91,7 @@ padding: 1em;
 margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
-display: block;
+display: inline-block;
 background: #fff;
 transition: all 300ms;
 color: #555;
@@ -99,6 +115,8 @@ const Carrosel = () => {
     return(
     <Section>
         <Container>
+
+            
             <Box1> 
                 <Title> Java </Title>
                 <Img> </Img>
@@ -120,7 +138,9 @@ const Carrosel = () => {
                 </List>
                  <Button> Projects</Button>   
             </Box2>
+    
 
+            
             <Box3> 
                 <Title> Assembly and C </Title>
                 <Img> </Img>
@@ -132,6 +152,7 @@ const Carrosel = () => {
                  <Button> Projects</Button>   
             </Box3>
 
+            
         </Container>
      </Section>)
 }

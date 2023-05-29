@@ -2,10 +2,9 @@ import React from "react";
 import Hero from "../Componentes/hero/hero";
 import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
-import Contact from "../Componentes/contact/Contact";
 import styled from "styled-components";
-import Img from "../../Img/i349388.webp"
 import Globlo from "../Componentes/Word/Globlo";
+import Carrosel from "../Componentes/Stacks/Carrosel";
 
 const Container = styled.div`
 height: auto;
@@ -23,7 +22,7 @@ const Home = () => {
     return (
         <Container>
             <Hero />
-            <Who />
+            <Carrosel/>
             <Whors />
             <Globlo/>
         </Container>

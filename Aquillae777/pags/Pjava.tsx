@@ -4,7 +4,7 @@ import React from "react";
 const Pjava = () => {
 return(
     <>
-    <h1> 5</h1>
+    <h1> 5 </h1>
     </>
 )
 }
