@@ -1,28 +1,5 @@
 import React from "react";
-import styled,{ keyframes } from "styled-components";
-
-const Key = keyframes`
-
-  0% {
-      transform: translate(0)
-  }
-  20% {
-      transform: translate(-5px, 5px)
-  }
-  40% {
-      transform: translate(-5px, -5px)
-  }
-  60% {
-      transform: translate(5px, 5px)
-  }
-  80% {
-      transform: translate(5px, -5px)
-  }
-  to {
-      transform: translate(0)
-  }
-}`
-
+import styled from "styled-components";
 
 const Section = styled.div`
 height: 100vh;
@@ -67,7 +44,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: block;
-background: transparent;
+background: transpa;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -75,11 +52,10 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: box 2s infinite ease alternate ;
-@keyframes box {
+animation: title 5s infinite ease alternate ;
+@keyframes title {
   to {
     transform: translateY(30px);
-    
   }
 }
 
@@ -97,7 +73,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: block;
-background: transparent;
+background: transpa;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -105,8 +81,8 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: box 2s infinite ease alternate ;
-@keyframes box {
+animation: title 5s infinite ease alternate ;
+@keyframes title {
   to {
     transform: translateY(30px);
   }
@@ -128,7 +104,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: inline-block;
-background: transparentrent ;
+background: transparent ;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -136,8 +112,8 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: box 2s infinite ease alternate ;
-@keyframes box {
+animation: title 5s infinite ease alternate ;
+@keyframes title {
   to {
     transform: translateY(30px);
   }
@@ -149,7 +125,7 @@ const Button = styled.button`
 
 `
 
-const box = styled.a`
+const Title = styled.a`
 
 `
 
@@ -160,7 +136,7 @@ const Carrosel = () => {
 
             
             <Box1> 
-                <box> Java </box>
+                <Title> Java </Title>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
@@ -171,7 +147,7 @@ const Carrosel = () => {
             </Box1>
 
             <Box2> 
-                <box> Typescript </box>
+                <Title> Typescript </Title>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
@@ -184,7 +160,7 @@ const Carrosel = () => {
 
             
             <Box3> 
-                <box> Assembly and C </box>
+                <Title> Assembly and C </Title>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
