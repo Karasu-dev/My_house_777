@@ -1,5 +1,28 @@
 import React from "react";
-import styled from "styled-components";
+import styled,{ keyframes } from "styled-components";
+
+const Key = keyframes`
+
+  0% {
+      transform: translate(0)
+  }
+  20% {
+      transform: translate(-5px, 5px)
+  }
+  40% {
+      transform: translate(-5px, -5px)
+  }
+  60% {
+      transform: translate(5px, 5px)
+  }
+  80% {
+      transform: translate(5px, -5px)
+  }
+  to {
+      transform: translate(0)
+  }
+}`
+
 
 const Section = styled.div`
 height: 100vh;
@@ -44,7 +67,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: block;
-background: #fff;
+background: transparent;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -52,6 +75,13 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
+animation: box 2s infinite ease alternate ;
+@keyframes box {
+  to {
+    transform: translateY(30px);
+    
+  }
+}
 
 `
 
@@ -67,7 +97,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: block;
-background: #fff;
+background: transparent;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -75,6 +105,12 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
+animation: box 2s infinite ease alternate ;
+@keyframes box {
+  to {
+    transform: translateY(30px);
+  }
+}
 
 
 `
@@ -92,7 +128,7 @@ margin: 2em;
 flex: 0 0 17.3vw;
 height: 17.3vw;
 display: inline-block;
-background: #fff;
+background: transparentrent ;
 transition: all 300ms;
 color: #555;
 display: flex;
@@ -100,6 +136,12 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
+animation: box 2s infinite ease alternate ;
+@keyframes box {
+  to {
+    transform: translateY(30px);
+  }
+}
 
 
 `
@@ -107,7 +149,7 @@ const Button = styled.button`
 
 `
 
-const Title = styled.a`
+const box = styled.a`
 
 `
 
@@ -118,7 +160,7 @@ const Carrosel = () => {
 
             
             <Box1> 
-                <Title> Java </Title>
+                <box> Java </box>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
@@ -129,7 +171,7 @@ const Carrosel = () => {
             </Box1>
 
             <Box2> 
-                <Title> Typescript </Title>
+                <box> Typescript </box>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
@@ -142,7 +184,7 @@ const Carrosel = () => {
 
             
             <Box3> 
-                <Title> Assembly and C </Title>
+                <box> Assembly and C </box>
                 <Img> </Img>
                 <List> 
                     <Ferramentas> teste </Ferramentas>
