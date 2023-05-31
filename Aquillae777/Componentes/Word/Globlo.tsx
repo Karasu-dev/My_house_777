@@ -15,20 +15,20 @@ const color3 = "";
 const color2 = "white"; 
 
 const Icosahedron = () => (
-  <mesh rotation-x={10} rotation-y={10} >
-    
- 
-  </mesh>
+ <> </>
 );
 
 /*  
+    <mesh rotation-x={10} rotation-y={10} >
      <icosahedronGeometry args={[1, 9,]} />
-    <meshBasicMaterial wireframe color={color} />*/
+    <meshBasicMaterial wireframe color={color} />
+ 
+  </mesh>  */
 
 const Star = ({ p }: { p: number }) => {
   const meshRef = useRef<Mesh>(null);
   useLayoutEffect(() => {
-    const distance = mix(10, 45, Math.random());
+    const distance = mix(20, 70, Math.random());
     const yAngle = mix(
       degreesToRadians(10),
       degreesToRadians(1000),
@@ -45,7 +45,7 @@ const Star = ({ p }: { p: number }) => {
     </mesh>
   );
 };
-function Scene({ numStars = 700}) {
+function Scene({ numStars = 1000}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(

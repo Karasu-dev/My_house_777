@@ -7,6 +7,7 @@ import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/Meu projeto.png"
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
+import mp3 from "../../../Img/backaudio.mp3";
 
 const Section = styled.div`
 height: 100vh;
@@ -26,6 +27,8 @@ height: 100%;
 scroll-snap-align: center;
 width: 1400px;
 display: flex;
+
+
 justify-content: space-between;
 
 @media only screen and (max-width: 600px) {
@@ -146,9 +149,13 @@ pointer-events: none;
   }
 }
 
-
-
 `;
+
+
+const Audio = styled.audio `
+z-indez: -1000;
+ 
+`
 
 const color = "yellow";
 const color3 = "";
@@ -160,6 +167,7 @@ export const Hero = () => {
         <Section>
             <NavBar/>
             <Container>
+              <Audio  autoPlay={true} loop src={mp3}/>
               <Left> 
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 <Whatwedo>
@@ -175,12 +183,12 @@ export const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={0.1} />
               <directionalLight position={[7, 7, 7]} />
-              <Sphere args={[1, 100, 200]} scale={1.9}>
+              <Sphere args={[1, 50, 100]} scale={2}>
                 <MeshDistortMaterial
                   color="black"
                   attach="material"
-                  distort={0.5}
-                  speed={7}
+                  distort={1}
+                  speed={2}
                 />
               </Sphere>          
           </Canvas>
