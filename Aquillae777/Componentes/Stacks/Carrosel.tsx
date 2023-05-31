@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, {Keyframes, keyframes} from "styled-components";
 
 const Section = styled.div`
 height: 100vh;
@@ -26,6 +26,7 @@ const List = styled.div`
 
 `
 const Img = styled.image`
+color: blue;
 `
 
 const Ferramentas = styled.li`
@@ -91,8 +92,7 @@ animation: title 5s infinite ease alternate ;
 
 `
 
-const Container2 = styled.div`
-`
+
 
 const Box3 = styled.div`
 flex: 0 0 22vw;
@@ -121,18 +121,93 @@ animation: title 5s infinite ease alternate ;
 
 
 `
+const Key = keyframes`
+
+  0% {
+      transform: translate(0)
+  }
+  20% {
+      transform: translate(-5px, 5px)
+  }
+  40% {
+      transform: translate(-5px, -5px)
+  }
+  60% {
+      transform: translate(5px, 5px)
+  }
+  80% {
+      transform: translate(5px, -5px)
+  }
+  to {
+      transform: translate(0)
+  }
+}`
+
+
 const Button = styled.button`
+cursor: pointer;
+background: black;
+text-transform: uppercase;
+outline: transparent;
+letter-spacing: 6px;
+border: 0;
+min-width: 10px;
+height: 10px;
+line-height: 50px;
+transition:  background 0.100s;
+transform: translate(-100%, 1000%);
+
+text-decoration: none;
+color: #fff;
+
+  &:before, &:after {
+      display: block;
+      content: 'Projects';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: .8;
+  } &:after {
+      color: #f0f;
+      z-index: -2;
+  } &:before {
+      color: blue;
+      z-index: -1;
+  }
+}
+  {
+  &:before {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) both infinite
+  }
+  &:after {
+      animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+  }
+}`
+
+const Title = styled.h3`
 
 `
 
-const Title = styled.a`
+const Text= styled.h1`
 
+ display: inline;
+
+`
+
+const ContainerText = styled.div`
 `
 
 const Carrosel = () => {
     return(
     <Section>
         <Container>
+          <ContainerText> 
+          <Text> Linguagens e Ferramentas</Text>
+          </ContainerText>
+
+
 
             
             <Box1> 
