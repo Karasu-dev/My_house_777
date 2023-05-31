@@ -1,5 +1,5 @@
 import React from "react";
-import styled, {Keyframes, keyframes} from "styled-components";
+import styled, { Keyframes, keyframes } from "styled-components";
 
 const Section = styled.div`
 height: 100vh;
@@ -15,11 +15,18 @@ justify-content: space-between;
 
 `
 const Container = styled.div`
-height: 100%;
-scroll-snap-align: center;
-width: 1400px;
+width: 100%; 
+margin-left: 50px;
+margin-right: ; 
+
+
+`
+
+const ContainerBox = styled.div`
+height : 100%;
+width: 100%;
 display: flex;
-justify-content: space-between;
+
 
 `
 const List = styled.div`
@@ -62,7 +69,7 @@ animation: title 5s infinite ease alternate ;
 
 `
 
-const Box2= styled.div`
+const Box2 = styled.div`
 flex: 0 0 22vw;
 height: 22vw;
 list-style-type: none;
@@ -190,63 +197,77 @@ const Title = styled.h3`
 
 `
 
-const Text= styled.h1`
-
- display: inline;
+const Text = styled.a`
+display: flex;
+aling-items: center;
+font-size: 74px;
 
 `
 
-const ContainerText = styled.div`
+const SUbtitle = styled.p`
 `
+
 
 const Carrosel = () => {
-    return(
+  return (
     <Section>
-        <Container>
-          <ContainerText> 
-          <Text> Linguagens e Ferramentas</Text>
-          </ContainerText>
+      <Container> 
+        <Text> Stacks </Text>
+        <SUbtitle> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently wit</SUbtitle>
+
+        <ContainerBox>
+          <Box1>
+            <Title> Java </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box1>
+
+          <Box2>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box2>
+
+          <Box2>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box2>
 
 
 
-            
-            <Box1> 
-                <Title> Java </Title>
-                <Img> </Img>
-                <List> 
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                </List>
-                 <Button> Projects</Button>   
-            </Box1>
+          <Box3>
+            <Title> Assembly and C </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box3>
 
-            <Box2> 
-                <Title> Typescript </Title>
-                <Img> </Img>
-                <List> 
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                </List>
-                 <Button> Projects</Button>   
-            </Box2>
-    
+        </ContainerBox> </Container>
 
-            
-            <Box3> 
-                <Title> Assembly and C </Title>
-                <Img> </Img>
-                <List> 
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                    <Ferramentas> teste </Ferramentas>
-                </List>
-                 <Button> Projects</Button>   
-            </Box3>
 
-            
-        </Container>
-     </Section>)
+
+
+
+    </Section>)
 }
-export default Carrosel ;
+export default Carrosel;
