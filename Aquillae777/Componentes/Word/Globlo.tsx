@@ -16,14 +16,14 @@ const color2 = "white";
 
 const Icosahedron = () => (
   <mesh rotation-x={10} rotation-y={10} >
-     <icosahedronGeometry args={[1, 9,]} />
-    <meshBasicMaterial wireframe color={color} />
+    
  
   </mesh>
 );
 
 /*  
-    */
+     <icosahedronGeometry args={[1, 9,]} />
+    <meshBasicMaterial wireframe color={color} />*/
 
 const Star = ({ p }: { p: number }) => {
   const meshRef = useRef<Mesh>(null);
