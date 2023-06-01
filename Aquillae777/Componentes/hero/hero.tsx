@@ -17,7 +17,7 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   height: 200vh;
 }
 `;
@@ -27,19 +27,11 @@ height: 100%;
 scroll-snap-align: center;
 width: 1400px;
 display: flex;
- @media only screen and(max-width: 768px){
- width: 100px;
-  flex-direction: column;
- aling-items: center;
- justify-content:center;
-
-
- }
 
 
 justify-content: space-between;
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -54,7 +46,7 @@ flex-direction: column;
 justify-content: center;
 gap: 20px;
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   flex: 1;
   align-items: center;
 
@@ -135,7 +127,7 @@ height: 5px;
 
 const Img = styled.img`
 width: 800px;
-height: 600px;
+height: 780px;
 object-fit: contain;
 position: absolute;
 top: 0;
@@ -145,15 +137,10 @@ right: 0;
 margin: auto;
 animation: animate 2s infinite ease alternate;
 pointer-events: none;
-s
 
 @media only screen and (max-width: 768px) {
   width: 300px;
   height: 300px;
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
-  }
 }
 
 @keyframes animate {
@@ -166,7 +153,6 @@ s
 
 
 const Audio = styled.audio `
-z-indez: -1000;
  
 `
 
@@ -180,7 +166,7 @@ export const Hero = () => {
         <Section>
             <NavBar/>
             <Container>
-              <Audio  autoPlay={true} loop src={mp3}/>
+              <Audio controls autoPlay={true} loop src={mp3}/>
               <Left> 
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 <Whatwedo>
