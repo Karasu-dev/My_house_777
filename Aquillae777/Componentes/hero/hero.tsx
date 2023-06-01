@@ -166,7 +166,7 @@ export const Hero = () => {
         <Section>
             <NavBar/>
             <Container>
-              <Audio controls autoPlay={true} loop src={mp3}/>
+              <Audio  autoPlay={true} loop src={mp3}/>
               <Left> 
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 <Whatwedo>
