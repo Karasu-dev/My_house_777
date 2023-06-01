@@ -27,6 +27,14 @@ height: 100%;
 scroll-snap-align: center;
 width: 1400px;
 display: flex;
+ @media only screen and(max-width: 768px){
+ width: 100px;
+  flex-direction: column;
+ aling-items: center;
+ justify-content:center;
+
+
+ }
 
 
 justify-content: space-between;
@@ -137,10 +145,15 @@ right: 0;
 margin: auto;
 animation: animate 2s infinite ease alternate;
 pointer-events: none;
+s
 
 @media only screen and (max-width: 768px) {
   width: 300px;
   height: 300px;
+  @media only screen and (max-width: 768px) {
+    flex: 1;
+    width: 100%;
+  }
 }
 
 @keyframes animate {
