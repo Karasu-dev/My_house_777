@@ -144,11 +144,7 @@ pointer-events: none;
  display: block ;
 }
 
-@keyframes animate {
-  to {
-    transform: translateY(60px);
-  }
-}
+
 
 `;
 
@@ -181,14 +177,13 @@ export const Hero = () => {
               <Canvas>
        
               <OrbitControls enableZoom={false} />
-              <ambientLight intensity={0.1} />
-              <directionalLight position={[7, 7, 7]} />
-              <Sphere args={[1, 50, 100]} scale={2}>
+              <ambientLight intensity={1} />
+              <directionalLight position={[1, 0, 0]} />
+              <Sphere args={[1, 100, 100]} scale={2}>
                 <MeshDistortMaterial
-                  color="#808080"
-                  attach="material"
-                  distort={2}
-                  speed={8}
+                  color="#00FFFF"
+                  speed={10}
+                  reflectivity={1}
                 />
               </Sphere>          
           </Canvas>
