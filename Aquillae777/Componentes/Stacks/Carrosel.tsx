@@ -30,6 +30,8 @@ display: flex;
 
 `
 const List = styled.div`
+height: 700px;
+width: 350px;
 
 `
 const Img = styled.image`
@@ -37,8 +39,10 @@ color: blue;
 `
 
 const Ferramentas = styled.li`
-width: 10px;
-padding: 2px;
+Font-size: 20px;
+height: 20px;
+
+
 
 `
 
@@ -60,10 +64,10 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: title 5s infinite ease alternate ;
-@keyframes title {
+animation: box1 1s infinite ease alternate ;
+@keyframes box1 {
   to {
-    transform: translateY(30px);
+    transform: translateY(70px);
   }
 }
 
@@ -89,13 +93,12 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: title 5s infinite ease alternate ;
-@keyframes title {
+animation: box2 1s infinite ease alternate ;
+@keyframes box2 {
   to {
-    transform: translateY(30px);
+    transform: translateY(70px);
   }
 }
-
 
 `
 
@@ -119,10 +122,37 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 overflow: hidden;
-animation: title 5s infinite ease alternate ;
-@keyframes title {
+animation: box3 1s infinite ease alternate ;
+@keyframes box3 {
   to {
-    transform: translateY(30px);
+    transform: translateY(70px);
+  }
+}
+`
+const Box4 = styled.div`
+flex: 0 0 22vw;
+height: 22vw;
+list-style-type: none;
+box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+
+border-radius: 6px;
+padding: 1em;
+margin: 2em;
+flex: 0 0 17.3vw;
+height: 17.3vw;
+display: block;
+background: transpa;
+transition: all 300ms;
+color: #555;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+animation: box4 1s infinite ease alternate ;
+@keyframes box4 {
+  to {
+    transform: translateY(70px);
   }
 }
 
@@ -160,9 +190,9 @@ letter-spacing: 6px;
 border: 0;
 min-width: 10px;
 height: 10px;
-line-height: 50px;
+line-height: 5px;
 transition:  background 0.100s;
-transform: translate(-100%, 1000%);
+transform: translate(-100%, 100%);
 
 text-decoration: none;
 color: #fff;
@@ -194,12 +224,17 @@ color: #fff;
 }`
 
 const Title = styled.h3`
+Font-size: 30px;
+height: 200px;
+width: 300px;
+
+
 
 `
 
 const Text = styled.a`
-display: flex;
-aling-items: center;
+
+
 font-size: 74px;
 
 `
@@ -223,6 +258,9 @@ const Carrosel = () => {
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
             </List>
             <Button> Projects</Button>
           </Box1>
@@ -234,33 +272,46 @@ const Carrosel = () => {
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
-            </List>
-            <Button> Projects</Button>
-          </Box2>
-
-          <Box2>
-            <Title> Typescript </Title>
-            <Img> </Img>
-            <List>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
+              
             </List>
             <Button> Projects</Button>
           </Box2>
 
 
-
-          <Box3>
+          <Box4>
             <Title> Assembly and C </Title>
             <Img> </Img>
             <List>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box4>
+
+          <Box3>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
             </List>
             <Button> Projects</Button>
           </Box3>
+
+
+
+    
 
         </ContainerBox> </Container>
 
