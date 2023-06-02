@@ -47,6 +47,13 @@ const Form = styled.form`
   @media only screen and (max-width: 768px) {
     width: 300px;
   }
+  animation: Button 3s infinite ease alternate;
+
+
+  @keyframes Button {
+    to {
+      transform: translateX(50px);
+    }
 `;
 
 const Input = styled.input`
@@ -55,6 +62,13 @@ const Input = styled.input`
   border: none;
   border-radius: 5px;
   z-index: -0;
+  animation: Button 3s infinite ease alternate;
+
+
+  @keyframes Button {
+    to {
+      transform: translateX(50px);
+    }
 `;
 
 const TextArea = styled.textarea`
@@ -62,6 +76,13 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   background-color: #e8e6e6;
+  animation: Button 3s infinite ease alternate;
+
+
+  @keyframes Button {
+    to {
+      transform: translateX(50px);
+    }
 `;
 
 const Button = styled.button`

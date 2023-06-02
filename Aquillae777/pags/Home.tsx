@@ -6,6 +6,8 @@ import styled from "styled-components";
 import Globlo from "../Componentes/Word/Globlo";
 import Carrosel from "../Componentes/Stacks/Carrosel";
 import Contact from "./Contact";
+import mp3 from "../../Img/backaudio.mp3";
+
 
 const Container = styled.div`
 height: auto;
@@ -19,9 +21,14 @@ color: white;
   display: none;
 }`;
 
+const Audio = styled.audio `
+
+ 
+`
 const Home = () => {
     return (
         <Container>
+            <Audio  autoPlay={true} loop src={mp3}/>
             <Hero />
             <Carrosel/>
             <Whors></Whors>

@@ -58,7 +58,13 @@ animation: animate 4s  infinite ease alternate;
 
 
 @media only screen and (max-width: 768px) {
-  font-size: 24px;
+  font-size: 90px;
+font-weight: bold;
+cursor: pointer;
+color: transparent;
+-webkit-text-stroke: 1px white;
+position: relative;
+flex-direction: column;
   color: white;
   -webkit-text-stroke: 0px;
 }
@@ -75,7 +81,7 @@ animation: animate 4s  infinite ease alternate;
 
 &:hover {
   ::after {
-    animation: moveText 0.5s linear both;
+    animation: moveText 3s linear both;
 
     @keyframes moveText {
       to {
@@ -84,6 +90,14 @@ animation: animate 4s  infinite ease alternate;
     }
   }
 }
+animation: Button 3s infinite ease alternate;
+
+
+@keyframes Button {
+  to {
+    transform: translateX(100px);
+    transform: translateY(100px);
+  }
 `;
 
 
