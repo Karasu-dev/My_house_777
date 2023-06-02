@@ -70,7 +70,7 @@ min-width: 10px;
 height: 10px;
 line-height: 5px;
 transition:  background 0.100s;
-transform: translate(-100%, 100%);
+transform: translate(-2%, 1100%);
 
 text-decoration: none;
 color: #fff;
@@ -141,12 +141,12 @@ padding: 20px;
 const Box1 = styled.div`
 padding: 5px;
 margin: 10px;
-width:50%;
-height: 500px;
-border-style: solid;
+width: 50%;
+height: 400px;
+color: red;
+border-style: solid  ;
 border-width: 5px;
-
-box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
+box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 
 
 animation: box1 1s infinite ease alternate ;
@@ -159,10 +159,10 @@ animation: box1 1s infinite ease alternate ;
 @media only screen and (max-width: 780px) {
   height: auto;
   width: auto;
-  padding: 10px;
+  padding: 15px;
+  margin: 40px;
   
 
- 
 }
 
 
@@ -172,10 +172,11 @@ const Box2 = styled.div`
 padding: 5px;
 margin: 10px;
 width:50%;
-height: 550px;
+height: 400px;
 border-style: solid;
+color: blue;
 border-width: 5px;
-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+box-shadow: rgba(32, 40, 145, 0.4) -5px 5px, rgba(32, 40, 145, 0.3) -10px 10px, rgba(32, 40, 145, 0.2) -20px 20px, rgba(32, 40, 145, 0.1) -25px 25px;
 
 
 animation: box2 1s infinite ease alternate ;
@@ -189,6 +190,8 @@ animation: box2 1s infinite ease alternate ;
   height: auto;
   width: auto;
   padding: 10px;
+  margin: 50px;
+
 }
 `
 
@@ -198,10 +201,11 @@ const Box3 = styled.div`
 padding: 5px;
 margin: 10px;
 width:50%;
-height: 600px;
+height: 400px;
 border-style: solid;
+color:pink;
 border-width: 5px;
-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
 
 animation: box3 1s infinite ease alternate ;
 @keyframes box3 {
@@ -214,16 +218,19 @@ animation: box3 1s infinite ease alternate ;
   height: auto;
   width: auto;
   padding: 10px;
+  margin: 60px;
+
 }
 `
 const Box4 = styled.div`
+color: green;
 padding: 5px;
 margin: 10px;
-height: 650px;
+height: 400px;
 border-style: solid;
 border-width: 5px;
 width:50%;
-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+box-shadow: rgba(0, 255, 88, 0.8) -1px 1px, rgba(0, 255, 88, 0.4) -5px 5px, rgba(0, 255, 88, 0.3) -10px 10px, rgba(0, 255, 88, 0.2) -15px 15px, rgba(0, 255, 88, 0.1) -20px 20px, rgba(0, 255, 88, 0.0)-25px 25px;
 
 
 animation: box4 1s infinite ease alternate ;
@@ -236,6 +243,8 @@ animation: box4 1s infinite ease alternate ;
   height: auto;
   width: auto;
   padding: 10px;
+  margin: 80px;
+
  
 }
 `
@@ -362,9 +371,8 @@ const Carrosel = () => {
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              
+              
             </List>
             <Button> Projects</Button>
           </Box1>
