@@ -10,7 +10,7 @@ import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import mp3 from "../../../Img/backaudio.mp3";
 
 const Section = styled.div`
-height: 100vh;
+height: 150vh;
 scroll-snap-align: center;
 display: flex;
 flex-direction: column;
@@ -23,7 +23,7 @@ justify-content: space-between;
 `;
 
 const Container = styled.div`
-height: 100%;
+height: 150%;
 scroll-snap-align: center;
 width: 1400px;
 display: flex;
@@ -179,7 +179,7 @@ export const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[1, 0, 0]} />
-              <Sphere args={[1, 100, 100]} scale={2}>
+              <Sphere args={[0.7, 100, 100]} scale={2}>
                 <MeshDistortMaterial
                   color="#00FFFF"
                   speed={10}

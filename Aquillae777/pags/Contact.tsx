@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const Section = styled.div`
-  height: 100vh;
+  height: 50vh;
   scroll-snap-align: center;
 `;
 
@@ -14,7 +14,6 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  background: black;
 `;
 
 const Left = styled.div`

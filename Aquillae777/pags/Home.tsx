@@ -5,6 +5,7 @@ import Whors from "../Componentes/works/works";
 import styled from "styled-components";
 import Globlo from "../Componentes/Word/Globlo";
 import Carrosel from "../Componentes/Stacks/Carrosel";
+import Contact from "./Contact";
 
 const Container = styled.div`
 height: auto;
@@ -23,7 +24,8 @@ const Home = () => {
         <Container>
             <Hero />
             <Carrosel/>
-            <Whors />
+            <Whors></Whors>
+            <Contact></Contact>     
             <Globlo/>
         </Container>
     )

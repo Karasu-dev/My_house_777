@@ -2,7 +2,7 @@ import React from "react";
 import styled, { Keyframes, keyframes } from "styled-components";
 
 const Section = styled.div`
-height: 100vh;
+height: 200vh;
 scroll-snap-align: center;
 display: flex;
 flex-direction: column;
@@ -17,10 +17,10 @@ justify-content: space-between;
 
 `
 const Container = styled.div`
-height: 100%;
+height: 150%;
 scroll-snap-align: center;
 width: 1400px;
-display: flex;
+display: block;
 
 
 justify-content: space-between;
@@ -124,8 +124,7 @@ const ContainerBox = styled.div`
 display: flex;
 justify-content: space-between;
 padding: 20px;
-border-style: solid;
-border-width: 5px;
+
 
 
 @media only screen and (max-width: 780px) {
@@ -187,9 +186,9 @@ animation: box2 1s infinite ease alternate ;
 }
 
 @media only screen and (max-width: 780px) {
-  height: 50vh;
-  
-  justify-content: space-between;
+  height: auto;
+  width: auto;
+  padding: 10px;
 }
 `
 
@@ -212,9 +211,9 @@ animation: box3 1s infinite ease alternate ;
   }
 }
 @media only screen and (max-width: 780px) {
-  height: 50vh;
-
-  justify-content: space-between;
+  height: auto;
+  width: auto;
+  padding: 10px;
 }
 `
 const Box4 = styled.div`
@@ -234,9 +233,112 @@ animation: box4 1s infinite ease alternate ;
   }
 }
 @media only screen and (max-width: 780px) {
-  height: 50vh;
+  height: auto;
+  width: auto;
+  padding: 10px;
  
-  justify-content: space-between;
+}
+`
+
+const Box5 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 500px;
+border-style: solid;
+border-width: 5px;
+
+box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
+
+
+animation: box1 1s infinite ease alternate ;
+@keyframes box1 {
+  to {
+    transform: translateY(70px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  
+
+ 
+}
+
+
+`
+
+const Box6 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 550px;
+border-style: solid;
+border-width: 5px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+animation: box2 1s infinite ease alternate ;
+@keyframes box2 {
+  to {
+    transform: translateY(70px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+`
+
+
+
+const Box7 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 600px;
+border-style: solid;
+border-width: 5px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+animation: box3 1s infinite ease alternate ;
+@keyframes box3 {
+  to {display: flex;
+    justify-content: space-between;
+    transform: translateY(70px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  height: auto;
+  width: auto;
+  padding: 10px;
+}
+`
+const Box8 = styled.div`
+padding: 5px;
+margin: 10px;
+height: 650px;
+border-style: solid;
+border-width: 5px;
+width:50%;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+animation: box4 1s infinite ease alternate ;
+@keyframes box4 {
+  to {
+    transform: translateY(70px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  height: auto;
+  width: auto;
+  padding: 10px;
+ 
 }
 
 
@@ -303,6 +405,63 @@ const Carrosel = () => {
             </List>
             <Button> Projects</Button>
           </Box4>
+
+         </ContainerBox> 
+
+         <ContainerBox>      
+          <Box5>
+            <Title> Java </Title>
+            
+            <Img> </Img>
+
+            <List>
+            
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box5>
+
+          <Box6>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              
+              
+            </List>
+            <Button> Projects</Button>
+          </Box6>
+
+
+          <Box7>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box7>
+
+
+          <Box8>
+            <Title> Assembly and C </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box8>
 
          </ContainerBox> 
         </Container>
