@@ -2,7 +2,7 @@ import React from "react";
 import styled, { Keyframes, keyframes } from "styled-components";
 
 const Section = styled.div`
-height: 200vh;
+height: 150vh;
 scroll-snap-align: center;
 display: flex;
 flex-direction: column;
@@ -408,62 +408,7 @@ const Carrosel = () => {
 
          </ContainerBox> 
 
-         <ContainerBox>      
-          <Box5>
-            <Title> Java </Title>
-            
-            <Img> </Img>
-
-            <List>
-            
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-            </List>
-            <Button> Projects</Button>
-          </Box5>
-
-          <Box6>
-            <Title> Typescript </Title>
-            <Img> </Img>
-            <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              
-              
-            </List>
-            <Button> Projects</Button>
-          </Box6>
-
-
-          <Box7>
-            <Title> Typescript </Title>
-            <Img> </Img>
-            <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-            </List>
-            <Button> Projects</Button>
-          </Box7>
-
-
-          <Box8>
-            <Title> Assembly and C </Title>
-            <Img> </Img>
-            <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-            </List>
-            <Button> Projects</Button>
-          </Box8>
-
-         </ContainerBox> 
+      
         </Container>
     </Section>)
 }
