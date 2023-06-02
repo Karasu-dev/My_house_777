@@ -35,15 +35,12 @@ width: 350px;
 
 `
 const Img = styled.image`
-color: blue;
+
 `
 
 const Ferramentas = styled.li`
 Font-size: 20px;
 height: 20px;
-
-
-
 `
 
 const Box1 = styled.div`
@@ -74,25 +71,7 @@ animation: box1 1s infinite ease alternate ;
 `
 
 const Box2 = styled.div`
-flex: 0 0 22vw;
-height: 22vw;
-list-style-type: none;
-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 
-border-radius: 6px;
-padding: 1em;
-margin: 2em;
-flex: 0 0 17.3vw;
-height: 17.3vw;
-display: block;
-background: transpa;
-transition: all 300ms;
-color: #555;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-overflow: hidden;
 animation: box2 1s infinite ease alternate ;
 @keyframes box2 {
   to {
@@ -105,23 +84,7 @@ animation: box2 1s infinite ease alternate ;
 
 
 const Box3 = styled.div`
-flex: 0 0 22vw;
-height: 22vw;list-style-type: none;
-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-border-radius: 6px;
-padding: 1em;
-margin: 2em;
-flex: 0 0 17.3vw;
-height: 17.3vw;
-display: inline-block;
-background: transparent ;
-transition: all 300ms;
-color: #555;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-overflow: hidden;
+
 animation: box3 1s infinite ease alternate ;
 @keyframes box3 {
   to {
@@ -130,25 +93,7 @@ animation: box3 1s infinite ease alternate ;
 }
 `
 const Box4 = styled.div`
-flex: 0 0 22vw;
-height: 22vw;
-list-style-type: none;
-box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 
-border-radius: 6px;
-padding: 1em;
-margin: 2em;
-flex: 0 0 17.3vw;
-height: 17.3vw;
-display: block;
-background: transpa;
-transition: all 300ms;
-color: #555;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-overflow: hidden;
 animation: box4 1s infinite ease alternate ;
 @keyframes box4 {
   to {
@@ -228,18 +173,16 @@ Font-size: 30px;
 height: 200px;
 width: 300px;
 
-
-
 `
-
-const Text = styled.a`
-
-
-font-size: 74px;
+const ContainerTitulo = styled.div`
 
 `
 
 const SUbtitle = styled.p`
+`
+
+const Text = styled.text`
+
 `
 
 
@@ -247,14 +190,20 @@ const Carrosel = () => {
   return (
     <Section>
       <Container> 
-        <Text> Stacks </Text>
-        <SUbtitle> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently wit</SUbtitle>
-
+    
         <ContainerBox>
+          <ContainerTitulo>             <Text> Stacks </Text>
+    <SUbtitle> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently wit</SUbtitle>
+</ContainerTitulo>
+        
+       
           <Box1>
             <Title> Java </Title>
+            
             <Img> </Img>
+
             <List>
+            
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
@@ -272,9 +221,7 @@ const Carrosel = () => {
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              
               
             </List>
             <Button> Projects</Button>
@@ -285,9 +232,6 @@ const Carrosel = () => {
             <Title> Assembly and C </Title>
             <Img> </Img>
             <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
@@ -302,23 +246,11 @@ const Carrosel = () => {
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
               <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
             </List>
             <Button> Projects</Button>
           </Box3>
-
-
-
-    
-
-        </ContainerBox> </Container>
-
-
-
-
-
+         </ContainerBox> 
+        </Container>
     </Section>)
 }
 export default Carrosel;

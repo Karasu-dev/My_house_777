@@ -139,8 +139,9 @@ animation: animate 2s infinite ease alternate;
 pointer-events: none;
 
 @media only screen and (max-width: 768px) {
-  width: 300px;
-  height: 300px;
+ max-width: 100%;
+ max-height: 100%;
+ display: block ;
 }
 
 @keyframes animate {
