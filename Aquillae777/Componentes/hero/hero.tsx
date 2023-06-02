@@ -184,6 +184,7 @@ export const Hero = () => {
                   color="#00FFFF"
                   speed={10}
                   reflectivity={1}
+                  
                 />
               </Sphere>          
           </Canvas>

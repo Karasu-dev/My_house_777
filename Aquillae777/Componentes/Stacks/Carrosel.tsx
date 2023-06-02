@@ -9,100 +9,33 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   height: 200vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 `
 const Container = styled.div`
-width: 100%; 
-margin-left: 50px;
-margin-right: ; 
-
-
-`
-
-const ContainerBox = styled.div`
-height : 100%;
-width: 100%;
+height: 100%;
+scroll-snap-align: center;
+width: 1400px;
 display: flex;
 
 
-`
-const List = styled.div`
-height: 700px;
-width: 350px;
+justify-content: space-between;
 
-`
-const Img = styled.image`
-
-`
-
-const Ferramentas = styled.li`
-Font-size: 20px;
-height: 20px;
-`
-
-const Box1 = styled.div`
-flex: 0 0 22vw;
-height: 22vw;list-style-type: none;
-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-border-radius: 6px;
-padding: 1em;
-margin: 2em;
-flex: 0 0 17.3vw;
-height: 17.3vw;
-display: block;
-background: transpa;
-transition: all 300ms;
-color: #555;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-overflow: hidden;
-animation: box1 1s infinite ease alternate ;
-@keyframes box1 {
-  to {
-    transform: translateY(70px);
-  }
+@media only screen and (max-width: 780px) {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-`
-
-const Box2 = styled.div`
-
-animation: box2 1s infinite ease alternate ;
-@keyframes box2 {
-  to {
-    transform: translateY(70px);
-  }
-}
-
-`
+`;
 
 
 
-const Box3 = styled.div`
 
-animation: box3 1s infinite ease alternate ;
-@keyframes box3 {
-  to {
-    transform: translateY(70px);
-  }
-}
-`
-const Box4 = styled.div`
-
-animation: box4 1s infinite ease alternate ;
-@keyframes box4 {
-  to {
-    transform: translateY(70px);
-  }
-}
-
-
-`
 const Key = keyframes`
 
   0% {
@@ -174,16 +107,141 @@ height: 200px;
 width: 300px;
 
 `
-const ContainerTitulo = styled.div`
+
+
+const List = styled.div`
+
+`
+const Img = styled.image`
+`
+
+const Ferramentas = styled.li`
+Font-size: 20px;
 
 `
 
-const SUbtitle = styled.p`
+const ContainerBox = styled.div`
+display: flex;
+justify-content: space-between;
+padding: 20px;
+border-style: solid;
+border-width: 5px;
+
+
+@media only screen and (max-width: 780px) {
+  display: inline;
+  height: auto;
+  display: block;
+   
+  
+}
+
+
 `
 
-const Text = styled.text`
+const Box1 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 500px;
+border-style: solid;
+border-width: 5px;
+
+box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
+
+
+animation: box1 1s infinite ease alternate ;
+@keyframes box1 {
+  to {
+    transform: translateY(70px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  
+
+ 
+}
+
 
 `
+
+const Box2 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 550px;
+border-style: solid;
+border-width: 5px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+animation: box2 1s infinite ease alternate ;
+@keyframes box2 {
+  to {
+    transform: translateY(70px);
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  height: 50vh;
+  
+  justify-content: space-between;
+}
+`
+
+
+
+const Box3 = styled.div`
+padding: 5px;
+margin: 10px;
+width:50%;
+height: 600px;
+border-style: solid;
+border-width: 5px;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+animation: box3 1s infinite ease alternate ;
+@keyframes box3 {
+  to {display: flex;
+    justify-content: space-between;
+    transform: translateY(70px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  height: 50vh;
+
+  justify-content: space-between;
+}
+`
+const Box4 = styled.div`
+padding: 5px;
+margin: 10px;
+height: 650px;
+border-style: solid;
+border-width: 5px;
+width:50%;
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+
+animation: box4 1s infinite ease alternate ;
+@keyframes box4 {
+  to {
+    transform: translateY(70px);
+  }
+}
+@media only screen and (max-width: 780px) {
+  height: 50vh;
+ 
+  justify-content: space-between;
+}
+
+
+`
+
 
 
 const Carrosel = () => {
@@ -191,12 +249,7 @@ const Carrosel = () => {
     <Section>
       <Container> 
     
-        <ContainerBox>
-          <ContainerTitulo>             <Text> Stacks </Text>
-    <SUbtitle> industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently wit</SUbtitle>
-</ContainerTitulo>
-        
-       
+        <ContainerBox>      
           <Box1>
             <Title> Java </Title>
             
@@ -228,6 +281,18 @@ const Carrosel = () => {
           </Box2>
 
 
+          <Box3>
+            <Title> Typescript </Title>
+            <Img> </Img>
+            <List>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> teste </Ferramentas>
+            </List>
+            <Button> Projects</Button>
+          </Box3>
+
+
           <Box4>
             <Title> Assembly and C </Title>
             <Img> </Img>
@@ -239,16 +304,6 @@ const Carrosel = () => {
             <Button> Projects</Button>
           </Box4>
 
-          <Box3>
-            <Title> Typescript </Title>
-            <Img> </Img>
-            <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-            </List>
-            <Button> Projects</Button>
-          </Box3>
          </ContainerBox> 
         </Container>
     </Section>)
