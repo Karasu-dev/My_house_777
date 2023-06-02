@@ -2,7 +2,7 @@ import React from "react";
 import styled, { Keyframes, keyframes } from "styled-components";
 
 const Section = styled.div`
-height: 150vh;
+height: 200vh;
 scroll-snap-align: center;
 display: flex;
 flex-direction: column;
@@ -10,14 +10,14 @@ align-items: center;
 justify-content: space-between;
 
 @media only screen and (max-width: 780px) {
-  height: 200vh;
+  height: 250vh;
   display: flex;
   justify-content: space-between;
 }
 
 `
 const Container = styled.div`
-height: 150%;
+height: 100%;
 scroll-snap-align: center;
 width: 1400px;
 display: block;
@@ -149,10 +149,10 @@ border-width: 5px;
 box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 
 
-animation: box1 1s infinite ease alternate ;
+animation: box1 10s infinite ease alternate ;
 @keyframes box1 {
   to {
-    transform: translateY(70px);
+    transform: translateY(200px);
   }
 }
 
@@ -179,10 +179,10 @@ border-width: 5px;
 box-shadow: rgba(32, 40, 145, 0.4) -5px 5px, rgba(32, 40, 145, 0.3) -10px 10px, rgba(32, 40, 145, 0.2) -20px 20px, rgba(32, 40, 145, 0.1) -25px 25px;
 
 
-animation: box2 1s infinite ease alternate ;
+animation: box2 10s infinite ease alternate ;
 @keyframes box2 {
   to {
-    transform: translateY(70px);
+    transform: translateY(100px);
   }
 }
 
@@ -207,11 +207,11 @@ color:pink;
 border-width: 5px;
 box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
 
-animation: box3 1s infinite ease alternate ;
+animation: box3 10s infinite ease alternate ;
 @keyframes box3 {
   to {display: flex;
     justify-content: space-between;
-    transform: translateY(70px);
+    transform: translateY(150px);
   }
 }
 @media only screen and (max-width: 780px) {
@@ -233,7 +233,7 @@ width:50%;
 box-shadow: rgba(0, 255, 88, 0.8) -1px 1px, rgba(0, 255, 88, 0.4) -5px 5px, rgba(0, 255, 88, 0.3) -10px 10px, rgba(0, 255, 88, 0.2) -15px 15px, rgba(0, 255, 88, 0.1) -20px 20px, rgba(0, 255, 88, 0.0)-25px 25px;
 
 
-animation: box4 1s infinite ease alternate ;
+animation: box4 4s infinite ease alternate ;
 @keyframes box4 {
   to {
     transform: translateY(70px);
