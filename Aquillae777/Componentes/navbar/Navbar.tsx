@@ -230,10 +230,11 @@ const NavBar = () => {
   return (
     <Section>
       <Container>
-      <ContainerCYPER> <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
+       <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
       <button className="cybr-btn"> Contato<span aria-hidden>_</span> <span aria-hidden className="cybr-btn__glitch" >contato_</span></button>
-      </ContainerCYPER>
+      
       <DropdownContainer>
+        
           <DropdownButton>Projetos geral</DropdownButton>
           <DropdownContent>
             <DropdownLink href="#">Link 1</DropdownLink>
