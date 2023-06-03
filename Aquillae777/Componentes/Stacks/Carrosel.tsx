@@ -99,6 +99,10 @@ color: #fff;
   &:after {
       animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
   }
+  @media only screen and (max-width: 780px) {
+    transform: translate(-2%, 10%);
+  }
+
 }`
 
 const Title = styled.h3`
@@ -144,7 +148,6 @@ margin: 10px;
 width: 50%;
 height: 400px;
 color: red;
-border-style: solid  ;
 border-width: 5px;
 box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 
@@ -161,6 +164,13 @@ animation: box1 10s infinite ease alternate ;
   width: auto;
   padding: 15px;
   margin: 40px;
+  animation: box1 10s infinite ease alternate ;
+  transform: translateY(-1px);
+  @keyframes box1 {
+    to {
+      transform: translateY(100px);
+    }
+  }
   
 
 }
@@ -173,10 +183,10 @@ padding: 5px;
 margin: 10px;
 width:50%;
 height: 400px;
-border-style: solid;
 color: blue;
 border-width: 5px;
-box-shadow: rgba(32, 40, 145, 0.4) -5px 5px, rgba(32, 40, 145, 0.3) -10px 10px, rgba(32, 40, 145, 0.2) -20px 20px, rgba(32, 40, 145, 0.1) -25px 25px;
+
+box-shadow: rgba(32, 40, 145, 0.4) 0px 5px, rgba(32, 40, 145, 0.3) 0px 10px, rgba(32, 40, 145, 0.2) 0px 20px, rgba(32, 40, 145, 0.1) 0px 25px;
 
 
 animation: box2 10s infinite ease alternate ;
@@ -191,6 +201,12 @@ animation: box2 10s infinite ease alternate ;
   width: auto;
   padding: 10px;
   margin: 50px;
+  @keyframes box2 {
+    to {
+      transform: translateY(100px);
+    }
+  }
+  
 
 }
 `
@@ -202,15 +218,13 @@ padding: 5px;
 margin: 10px;
 width:50%;
 height: 400px;
-border-style: solid;
 color:pink;
 border-width: 5px;
-box-shadow: rgba(240, 46, 170, 0.4) -5px 10px, rgba(240, 46, 170, 0.3) -15px 20px, rgba(240, 46, 170, 0.2) -20px 25px, rgba(240, 46, 170, 0.1) -25px 30px, rgba(240, 46, 170, 0.05) -30px 35px;
+box-shadow: rgba(240, 46, 170, 0.4) 0px 10px , rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 
 animation: box3 10s infinite ease alternate ;
 @keyframes box3 {
-  to {display: flex;
-    justify-content: space-between;
+  to {
     transform: translateY(150px);
   }
 }
@@ -219,6 +233,11 @@ animation: box3 10s infinite ease alternate ;
   width: auto;
   padding: 10px;
   margin: 60px;
+  @keyframes box3 {
+    to {
+      transform: translateY(100px);
+    }
+  }
 
 }
 `
@@ -227,10 +246,9 @@ color: green;
 padding: 5px;
 margin: 10px;
 height: 400px;
-border-style: solid;
 border-width: 5px;
 width:50%;
-box-shadow: rgba(0, 255, 88, 0.8) -1px 1px, rgba(0, 255, 88, 0.4) -5px 5px, rgba(0, 255, 88, 0.3) -10px 10px, rgba(0, 255, 88, 0.2) -15px 15px, rgba(0, 255, 88, 0.1) -20px 20px, rgba(0, 255, 88, 0.0)-25px 25px;
+box-shadow: rgba(0, 255, 88, 0.8) 5px 5px, rgba(0, 255, 88, 0.4) 10px 10px, rgba(0, 255, 88, 0.3) 15px 15px, rgba(0, 255, 88, 0.2) 15px 15px, rgba(0, 255, 88, 0.1) 20px 20px, rgba(0, 255, 88, 0.0) 25px 25px;
 
 
 animation: box4 4s infinite ease alternate ;
@@ -244,6 +262,12 @@ animation: box4 4s infinite ease alternate ;
   width: auto;
   padding: 10px;
   margin: 80px;
+  animation: box4 10s infinite ease alternate ;
+  @keyframes box4 {
+    to {
+      transform: translateY(100px);
+    }
+  }
 
  
 }
@@ -349,9 +373,14 @@ animation: box4 1s infinite ease alternate ;
   padding: 10px;
  
 }
-
-
 `
+
+const Titlex = styled.h1`
+font-size: 74px;
+
+
+
+`;
 
 
 
@@ -359,8 +388,9 @@ const Carrosel = () => {
   return (
     <Section>
       <Container> 
+        <Titlex> Linguagens</Titlex>
     
-        <ContainerBox>      
+        <ContainerBox>    
           <Box1>
             <Title> Java </Title>
             
@@ -413,6 +443,8 @@ const Carrosel = () => {
             </List>
             <Button> Projects</Button>
           </Box4>
+
+          
 
          </ContainerBox> 
 
