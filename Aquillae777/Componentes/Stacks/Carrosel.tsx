@@ -149,7 +149,6 @@ width: 50%;
 height: 400px;
 color: red;
 border-width: 5px;
-box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 
 
 animation: box1 10s infinite ease alternate ;
@@ -186,7 +185,6 @@ height: 400px;
 color: blue;
 border-width: 5px;
 
-box-shadow: rgba(32, 40, 145, 0.4) 0px 5px, rgba(32, 40, 145, 0.3) 0px 10px, rgba(32, 40, 145, 0.2) 0px 20px, rgba(32, 40, 145, 0.1) 0px 25px;
 
 
 animation: box2 10s infinite ease alternate ;
@@ -220,7 +218,6 @@ width:50%;
 height: 400px;
 color:pink;
 border-width: 5px;
-box-shadow: rgba(240, 46, 170, 0.4) 0px 10px , rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 
 animation: box3 10s infinite ease alternate ;
 @keyframes box3 {
@@ -248,7 +245,7 @@ margin: 10px;
 height: 400px;
 border-width: 5px;
 width:50%;
-box-shadow: rgba(0, 255, 88, 0.8) 5px 5px, rgba(0, 255, 88, 0.4) 10px 10px, rgba(0, 255, 88, 0.3) 15px 15px, rgba(0, 255, 88, 0.2) 15px 15px, rgba(0, 255, 88, 0.1) 20px 20px, rgba(0, 255, 88, 0.0) 25px 25px;
+box-shadow: rgba(0, 255, 88, 0.) 5px 5px, rgba(0, 255, 88, 0.4) 10px 10px, rgba(0, 255, 88, 0.3) 15px 15px, rgba(0, 255, 88, 0.2) 15px 15px, rgba(0, 255, 88, 0.1) 20px 20px, rgba(0, 255, 88, 0.0) 25px 25px;
 
 
 animation: box4 4s infinite ease alternate ;
@@ -398,9 +395,9 @@ const Carrosel = () => {
 
             <List>
             
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> Spring </Ferramentas>
+              <Ferramentas> intelij </Ferramentas>
+              <Ferramentas>  </Ferramentas>
               
               
             </List>
@@ -411,9 +408,10 @@ const Carrosel = () => {
             <Title> Typescript </Title>
             <Img> </Img>
             <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> Vscode</Ferramentas>
+              <Ferramentas> Nodsjs </Ferramentas>
+              <Ferramentas> vercel </Ferramentas>
+
               
               
             </List>
@@ -422,12 +420,12 @@ const Carrosel = () => {
 
 
           <Box3>
-            <Title> Typescript </Title>
+            <Title> SQL</Title>
             <Img> </Img>
             <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> Vim </Ferramentas>
+              <Ferramentas> . </Ferramentas>
+              <Ferramentas>  . </Ferramentas>
             </List>
             <Button> Projects</Button>
           </Box3>
@@ -437,9 +435,8 @@ const Carrosel = () => {
             <Title> Assembly and C </Title>
             <Img> </Img>
             <List>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
-              <Ferramentas> teste </Ferramentas>
+              <Ferramentas> Nasm </Ferramentas>
+              <Ferramentas> gcc </Ferramentas>
             </List>
             <Button> Projects</Button>
           </Box4>
