@@ -1,10 +1,12 @@
 import React from "react";
+import Stacks from "../Componentes/Stacks/Stacks";
+import Globlo from "../Componentes/Word/Globlo";
 
 const PTSX = () => {
 
    return(<>
-   <h1> 5 </h1>
-   
+   <Stacks></Stacks>
+   <Globlo></Globlo>
    </>)
 
 }

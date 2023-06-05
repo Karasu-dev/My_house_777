@@ -58,7 +58,7 @@ animation: animate 4s  infinite ease alternate;
 
 
 @media only screen and (max-width: 768px) {
-  font-size: 90px;
+  font-size: 65px;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
@@ -117,6 +117,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
+
                 
                 </Right>
 

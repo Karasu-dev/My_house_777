@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const Section = styled.div`
-  height: 50vh;
+  height: 100vh;
   scroll-snap-align: center;
 `;
 
@@ -47,7 +47,6 @@ const Form = styled.form`
   @media only screen and (max-width: 768px) {
     width: 300px;
   }
-  animation: Button 3s infinite ease alternate;
 
 
   @keyframes Button {
@@ -62,7 +61,17 @@ const Input = styled.input`
   border: none;
   border-radius: 5px;
   z-index: -0;
-  animation: Button 3s infinite ease alternate;
+
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+    background-color: #e8e6e6;
+    border: none;
+    border-radius: 5px;
+    z-index: -0;
+    width: 400px;
+  }
+
+  
 
 
   @keyframes Button {
@@ -76,7 +85,16 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 5px;
   background-color: #e8e6e6;
-  animation: Button 3s infinite ease alternate;
+
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+    background-color: #e8e6e6;
+    border: none;
+    border-radius: 5px;
+    z-index: -0;
+    width: 400px;
+  }
+  
 
 
   @keyframes Button {
@@ -94,8 +112,18 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 10px;
-  animation: Button 3s infinite ease alternate;
 
+   
+  @media only screen and (max-width: 768px) {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+  }
 
   @keyframes Button {
     to {
