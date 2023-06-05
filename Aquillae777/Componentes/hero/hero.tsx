@@ -55,8 +55,6 @@ gap: 20px;
 const Right = styled.div`
 flex: 3;
 position: relative;
-pointer-events: none;
-
 @media only screen and (max-width: 768px) {
   flex: 1;
   width: 80%;
@@ -138,6 +136,7 @@ left: 0;
 right: 0;
 margin: auto;
 animation: animate 2s infinite ease alternate;
+pointer-events: none;
 
 @media only screen and (max-width: 768px) {
  max-width: 100%;
@@ -177,7 +176,7 @@ export const Hero = () => {
               <OrbitControls enableZoom={false} enableRotate={false}  />
               <ambientLight intensity={0.40} />
               <Sphere args={[0.7, 100, 100]} scale={2}>
-                <MeshDistortMaterial color="black" speed={10} reflectivity={1} />  </Sphere>          
+                <MeshDistortMaterial color="#00FFFF" speed={10} reflectivity={1} />  </Sphere>          
           </Canvas>
           <Img src={IMG} />
 
