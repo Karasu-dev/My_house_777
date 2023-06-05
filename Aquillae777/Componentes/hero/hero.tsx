@@ -177,7 +177,7 @@ export const Hero = () => {
               <OrbitControls enableZoom={false} enableRotate={false}  />
               <ambientLight intensity={0.40} />
               <Sphere args={[0.7, 100, 100]} scale={2}>
-                <MeshDistortMaterial color="blue" speed={10} reflectivity={1} />  </Sphere>          
+                <MeshDistortMaterial color="black" speed={10} reflectivity={1} />  </Sphere>          
           </Canvas>
           <Img src={IMG} />
 
