@@ -10,9 +10,8 @@ import { Mesh } from "three";
 import styled from "styled-components";
 import Img from "../../../Img/i349388.webp";
 
-const color = "yellow";
-const color3 = "";
-const color2 = "white"; 
+
+const color2 = "#99ffef"; 
 
 const Icosahedron = () => (
  <> </>
@@ -42,6 +41,7 @@ const Star = ({ p }: { p: number }) => {
       <boxGeometry args={[0, 20, 0]} />
       <meshBasicMaterial wireframe color={color2}/>
       
+      
     </mesh>
   );
 };
@@ -51,7 +51,7 @@ function Scene({ numStars = 1000}) {
   const yAngle = useTransform(
     scrollYProgress,
     [0, 1],
-    [1, degreesToRadians(150)]
+    [1, degreesToRadians(100)]
   );
   const distance = useTransform(scrollYProgress, [9, 10], [10, 3]);
   const time = useTime();
