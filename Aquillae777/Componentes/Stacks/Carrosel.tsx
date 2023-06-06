@@ -17,7 +17,7 @@ align-items: center;
 justify-content: space-between;
 
 @media only screen and (max-width: 780px) {
-  height: 270vh;
+  height: 290vh;
   display: flex;
   justify-content: space-between;
 }
