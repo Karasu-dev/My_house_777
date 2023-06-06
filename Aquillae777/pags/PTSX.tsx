@@ -5,7 +5,6 @@ import Globlo from "../Componentes/Word/Globlo";
 const PTSX = () => {
 
    return(<>
-   <Stacks></Stacks>
    <Globlo></Globlo>
    </>)
 
