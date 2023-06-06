@@ -10,7 +10,7 @@ const data = [
 ];
 
 const Section = styled.div`
- height: 100vh;
+ height: 80vh;
  scroll-snap-aling: center;
  display: flex;
  justify-content: center

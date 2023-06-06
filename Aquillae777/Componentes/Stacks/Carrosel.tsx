@@ -103,7 +103,7 @@ color: #fff;
       animation: ${Key} .10s cubic-bezier(.25, .46, .45, .94) reverse both infinite
   }
   @media only screen and (max-width: 780px) {
-    transform: translate(-2%, 10%);
+    transform: translate(-2%, 1100%);
   }
 }`
 
@@ -126,6 +126,7 @@ const ContainerBox = styled.div`
 display: flex;
 justify-content: space-between;
 padding: 10px;
+height: 650px;
 @media only screen and (max-width: 780px) {
   display: inline;
   height: auto;
@@ -149,7 +150,7 @@ animation: box1 10s infinite ease alternate ;
   }
 }
 @media only screen and (max-width: 780px) {
-  height: auto;
+  height: 400px;
   width: auto;
   padding: 15px;
   margin: 40px;
@@ -183,7 +184,7 @@ animation: box2 10s infinite ease alternate ;
 }
 
 @media only screen and (max-width: 780px) {
-  height: auto;
+  height: 400px;
   width: auto;
   padding: 10px;
   margin: 50px;
@@ -222,7 +223,7 @@ animation: box3 10s infinite ease alternate ;
   }
 }
 @media only screen and (max-width: 780px) {
-  height: auto;
+  height: 400px;
   width: auto;
   padding: 10px;
   margin: 50px;
@@ -256,7 +257,7 @@ animation: box4 4s infinite ease alternate ;
   }
 }
 @media only screen and (max-width: 780px) {
-  height: auto;
+  height: 400px;
   width: auto;
   padding: 10px;
   margin: 50px;
@@ -277,26 +278,56 @@ margin: 10px;
 gap: 10px;
 width: 60px;
 height; 50px;
+right: 1px;
+position: absolute;
+`;
+
+
+
+
+const ContainerText = styled.div`
+height: 400px;
+display: flex;
+align-items: center;
+
+
 
 `;
+
+const Title1 = styled.h1`
+font-size : 50px;
+
+`;
+
+const Sub = styled.p`
+font-size : 25px;
+
+`;
+
 
 
 
 const Carrosel = () => {
   return (
     <Section>
-      <Container> 
+      <Container>  
+
+        <ContainerText> 
+          <Title1> Stacks </Title1>
+           <Sub> Essas são minhas Ferramentas de criação sinto que cada stack mata um problema, java é minha linguagem principal  </Sub>
+
+        </ContainerText>
     
         <ContainerBox>    
           <Box1>
-            <Title>Java<Img src={IMGdois}/></Title>
+            <Title>Java <Img src={IMGdois}/></Title> 
             
 
         
             
-              <Ferramentas > Spring </Ferramentas>
+              <Ferramentas > Spring  boot </Ferramentas>
               <Ferramentas> intelij </Ferramentas>
-              <Ferramentas>  </Ferramentas>
+              <Ferramentas>  jsf</Ferramentas>
               
               
           
@@ -308,8 +339,10 @@ const Carrosel = () => {
             
         
               <Ferramentas> Vscode</Ferramentas>
-              <Ferramentas> Nodsjs </Ferramentas>
+              <Ferramentas> Node </Ferramentas>
               <Ferramentas> vercel </Ferramentas>
+              <Ferramentas> React </Ferramentas>
+
 
               
               
@@ -318,19 +351,11 @@ const Carrosel = () => {
           </Box2>
 
 
-          <Box3>
-            <Title> SQL <Img src={IMGquatro}/></Title>
         
-              <Ferramentas> Vim </Ferramentas>
-              <Ferramentas> . </Ferramentas>
-              <Ferramentas>  . </Ferramentas>
-          
-            <Button> Projects</Button>
-          </Box3>
 
 
           <Box4>
-            <Title>Assembly<Img src={IMGcinco}/></Title>
+            <Title>Assembly and c<Img src={IMGcinco}/></Title>
           
               <Ferramentas> Nasm </Ferramentas>
               <Ferramentas> gcc </Ferramentas>
@@ -338,15 +363,18 @@ const Carrosel = () => {
             <Button> Projects</Button>
           </Box4>
          </ContainerBox>
-
-
-         
-
-
-             
-
-      
         </Container>
     </Section>)
 }
 export default Carrosel;
+
+
+/*     <Box3>
+            <Title> SQL <Img src={IMGquatro}/></Title>
+        
+              <Ferramentas> Vim </Ferramentas>
+              <Ferramentas> . </Ferramentas>
+              <Ferramentas>  . </Ferramentas>
+          
+            <Button> Projects</Button>
+          </Box3>*/
