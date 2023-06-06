@@ -46,10 +46,12 @@ font-size: 90px;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
--webkit-text-stroke: 1px white;
+-webkit-text-stroke: 1px blue;
 position: relative;
 flex-direction: column;
 animation: animate 4s  infinite ease alternate;
+
+
 @keyframe animate{
   Button{
     tranform: tranlateY(55px);
@@ -58,15 +60,17 @@ animation: animate 4s  infinite ease alternate;
 
 
 @media only screen and (max-width: 768px) {
-  font-size: 65px;
+  font-size: 90px;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
--webkit-text-stroke: 1px white;
+-webkit-text-stroke: 1px blue;
 position: relative;
 flex-direction: column;
-  color: white;
-  -webkit-text-stroke: 0px;
+animation: animate 4s  infinite ease alternate;
+
+
+
 }
 
 ::after {
@@ -74,7 +78,7 @@ flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
-  color: blue;
+  color: white;
   width: 0px;
   overflow: hidden;
 }
@@ -90,7 +94,6 @@ flex-direction: column;
     }
   }
 }
-animation: Button 3s infinite ease alternate;
 
 
 @keyframes Button {
@@ -98,6 +101,39 @@ animation: Button 3s infinite ease alternate;
     transform: translateX(100px);
     transform: translateY(100px);
   }
+`;
+
+const Title = styled.h1`
+font-size: 74px
+ @media only screen and (max-width: 768px){
+  text-aling: center;
+ }
+ animation: title 5s infinite ease alternate ;
+@keyframes title {
+  to {
+    transform: translateY(30px);
+  }
+}
+`;
+
+const Whatwedo = styled.div`
+   display: flex;
+   aling-items: center;
+   gap: 10px
+   
+
+`;
+
+const SUbtitle = styled.h2`
+font-size: 20px;
+color: white;
+animation: SUbtitle 5s infinite ease alternate ;
+@keyframes SUbtitle  {
+  to {
+    transform: translateY(40px);
+  }
+}
+
 `;
 
 
@@ -117,8 +153,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
-
-                
+            
                 </Right>
 
             </Container>

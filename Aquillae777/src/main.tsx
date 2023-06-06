@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Home from "../pags/Home";
-import Contact from "../pags/Contact";
+import Contact from "../Componentes/Contact/Contact";
 import Pjava from "../pags/Pjava";
 import PTSX from "../pags/PTSX";
 

@@ -5,7 +5,7 @@ import Whors from "../Componentes/works/works";
 import styled from "styled-components";
 import Globlo from "../Componentes/Word/Globlo";
 import Carrosel from "../Componentes/Stacks/Carrosel";
-import Contact from "./Contact";
+import Contact from "../Componentes/Contact/Contact";
 import mp3 from "../../Img/backaudio.mp3";
 
 
