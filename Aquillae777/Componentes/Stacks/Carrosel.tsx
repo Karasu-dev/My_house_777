@@ -9,7 +9,7 @@ import IMGcinco from "../../../Img/iconw/dados-binarios.png";
 
 
 const Section = styled.div`
-height: 200vh;
+height: 150vh;
 scroll-snap-align: center;
 display: flex;
 flex-direction: column;
@@ -17,7 +17,7 @@ align-items: center;
 justify-content: space-between;
 
 @media only screen and (max-width: 780px) {
-  height: 250vh;
+  height: 270vh;
   display: flex;
   justify-content: space-between;
 }
