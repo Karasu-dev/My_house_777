@@ -12,9 +12,15 @@ import Img from "../../../Img/i349388.webp";
 
 
 const color2 = "#99ffef"; 
+const color = "#99ffef"; 
+
 
 const Icosahedron = () => (
- <> </>
+ <> 
+
+ 
+ 
+ </>
 );
 
 /*  
@@ -27,7 +33,7 @@ const Icosahedron = () => (
 const Star = ({ p }: { p: number }) => {
   const meshRef = useRef<Mesh>(null);
   useLayoutEffect(() => {
-    const distance = mix(20, 70, Math.random());
+    const distance = mix(1000, 0.1, Math.random());
     const yAngle = mix(
       degreesToRadians(10),
       degreesToRadians(1000),
@@ -38,14 +44,13 @@ const Star = ({ p }: { p: number }) => {
   });
   return (
     <mesh ref={meshRef}>
-      <boxGeometry args={[0, 20, 0]} />
+      <boxGeometry args={[10, 10, 1, 1, 1, 10 ,  ]} />
       <meshBasicMaterial wireframe color={color2}/>
-      
       
     </mesh>
   );
 };
-function Scene({ numStars = 1000}) {
+function Scene({ numStars = 500}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
