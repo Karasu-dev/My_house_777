@@ -46,7 +46,7 @@ font-size: 90px;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
--webkit-text-stroke: 4px #778899;
+-webkit-text-stroke: 4px rgb(1, 45, 80);
 position: relative;
 flex-direction: column;
 animation: animate 4s  infinite ease alternate;

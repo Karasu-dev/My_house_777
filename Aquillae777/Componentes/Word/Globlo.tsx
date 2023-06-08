@@ -12,11 +12,13 @@ import Img from "../../../Img/i349388.webp";
 
 
 const color2 = "#99ffef"; 
-const color = "#99ffef"; 
+const color = "red  "; 
 
 
 const Icosahedron = () => (
  <> 
+
+
 
  
  
@@ -24,19 +26,15 @@ const Icosahedron = () => (
 );
 
 /*  
-    <mesh rotation-x={10} rotation-y={10} >
-     <icosahedronGeometry args={[1, 9,]} />
-    <meshBasicMaterial wireframe color={color} />
- 
-  </mesh>  */
+   */
 
 const Star = ({ p }: { p: number }) => {
   const meshRef = useRef<Mesh>(null);
   useLayoutEffect(() => {
-    const distance = mix(1000, 0.1, Math.random());
+    const distance = mix(1000, 1, Math.random());
     const yAngle = mix(
-      degreesToRadians(10),
-      degreesToRadians(1000),
+      degreesToRadians(1),
+      degreesToRadians(10000),
       Math.random()
     );500
     const xAngle = degreesToRadians(1000) * p;
@@ -44,21 +42,21 @@ const Star = ({ p }: { p: number }) => {
   });
   return (
     <mesh ref={meshRef}>
-      <boxGeometry args={[10, 10, 1, 1, 1, 10 ,  ]} />
+      <boxGeometry args={[10, 10, 10, 1,  10, 10 ,  ]} />
       <meshBasicMaterial wireframe color={color2}/>
       
     </mesh>
   );
 };
-function Scene({ numStars = 500}) {
+function Scene({ numStars = 400}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(
     scrollYProgress,
     [0, 1],
-    [1, degreesToRadians(100)]
+    [1, degreesToRadians(1100 )]
   );
-  const distance = useTransform(scrollYProgress, [9, 10], [10, 3]);
+  const distance = useTransform(scrollYProgress, [9, 10], [10, 70, ]);
   const time = useTime();
   useFrame(({ camera }) => {
     camera.position.setFromSphericalCoords(
@@ -67,7 +65,7 @@ function Scene({ numStars = 500}) {
       time.get() * 0.0001
     );
     camera.updateProjectionMatrix();
-    camera.lookAt(1, 1, 1);
+    camera.lookAt(1, 10, 1);
   });
   useLayoutEffect(() => gl.setPixelRatio(1));
   const stars = [];
