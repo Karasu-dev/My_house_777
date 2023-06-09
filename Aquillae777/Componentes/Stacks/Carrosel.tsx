@@ -139,7 +139,7 @@ margin: 10px;
 width: 50%;
 height: 400px;
 color: ;
-background: rgba(255, 0, 0, 0.50);
+background: rgba(255, 0, 0, 1);
 border-width: 5px;
 border-radius: 20px;
 box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
@@ -173,7 +173,7 @@ width:50%;
 height: 400px;
 color: ;
 border-width: 5px;
-background: rgba(0, 0, 255, 0.50);
+background: rgba(0, 0, 255, 1);
 border-radius: 20px;
 box-shadow: rgba(0, 38, 255, 0.4) -5px 10px, rgba(0, 38, 255,  0.3) -15px 20px, rgba(0, 38, 255,  0.2) -20px 25px, rgba(0, 38, 255,  0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 animation: box2 10s infinite ease alternate ;
@@ -205,7 +205,7 @@ width:50%;
 height: 400px;
 color:pink;
 border-width: 5px;
-background: rgba(255, 255, 0, 0.14);
+background: rgba(255, 255, 0, 1);
 border-radius: 20px;
 box-shadow: rgba(255, 255, 0,
  0.4) -5px 10px, rgba(255, 255, 0,
@@ -243,7 +243,7 @@ margin: 10px;
 height: 400px;
 border-width: 5px;
 width:50%;
-background: rgba(0, 255, 0, 0.60);
+background: rgba(0, 255, 0, 1);
 border: 2px;
 border-radius: 20px;
 box-shadow: rgba(0, 255, 132, 0.4) -5px 10px, rgba(0, 255, 132, 0.3) -15px 20px, rgba(0, 255, 132, 0.2) -20px 25px, rgba(0, 255, 132, 0.1) -25px 30px, rgba(0, 255, 132, 0.0) -30px 35px;
@@ -289,6 +289,8 @@ const ContainerText = styled.div`
 height: 400px;
 display: flex;
 align-items: center;
+border: solid;
+background: black;
 
 
 
@@ -303,6 +305,8 @@ const Sub = styled.p`
 font-size : 25px;
 
 `;
+
+
 
 
 

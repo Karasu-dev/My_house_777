@@ -234,11 +234,15 @@ const NavBar = () => {
       
       <DropdownContainer>
         
-          <DropdownButton>Projetos geral</DropdownButton>
+          <DropdownButton> All</DropdownButton>
           <DropdownContent>
-            <DropdownLink href="#">Link 1</DropdownLink>
-            <DropdownLink href="#">Link 2</DropdownLink>
-            <DropdownLink href="#">Link 3</DropdownLink>
+            <DropdownLink href="#">Java</DropdownLink>
+            <DropdownLink href="#">Typescript</DropdownLink>
+            <DropdownLink href="#">React</DropdownLink>
+            <DropdownLink href="#">SQL</DropdownLink>
+            <DropdownLink href="#">History</DropdownLink>
+
+
           </DropdownContent>
         </DropdownContainer>
       </Container>

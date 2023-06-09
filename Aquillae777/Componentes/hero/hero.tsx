@@ -149,6 +149,14 @@ pointer-events: none;
 `;
 
 
+const Container12 = styled.div`
+border: solid;
+background: black;
+
+
+`;
+
+
 
 
 export const Hero = () => {
@@ -159,7 +167,9 @@ export const Hero = () => {
             <Container>
               
               <Left> 
-                
+                <Container12>
+
+  
                 <Title> Esse site está em estado de desenvolvimento !!!</Title>
                 
                 <Whatwedo>
@@ -168,6 +178,9 @@ export const Hero = () => {
                   <SUbtitle> Este Site está em processo de desenvolvimento estou desenvolvendo o front-end, em duas semanas todas as funcionalidades serão adicionadas  </SUbtitle>
                 </Whatwedo>
                 <Button> GitHub <GoOctoface/> </Button>
+
+                </Container12>
+              
               </Left>
               <Right> 
               <Canvas>
