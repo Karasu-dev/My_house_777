@@ -1,6 +1,9 @@
 import React from "react-dom";
 import Cubo from "../Cubo/cube";
 import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
+import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
+import { RingGeometry } from "three";
 
 
 
@@ -21,6 +24,7 @@ const Container = styled.div`
 width: 1400px;
 display: flex;
 justify-content: space-between;
+
 
 `;
 
@@ -46,7 +50,7 @@ font-size: 90px;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
--webkit-text-stroke: 4px rgb(1, 45, 80);
+-webkit-text-stroke: 4px white;
 position: relative;
 flex-direction: column;
 animation: animate 4s  infinite ease alternate;
@@ -64,7 +68,7 @@ animation: animate 4s  infinite ease alternate;
 font-weight: bold;
 cursor: pointer;
 color: transparent;
--webkit-text-stroke: 4px purple;
+-webkit-text-stroke: 4px white;
 position: relative;
 flex-direction: column;
 animation: animate 4s  infinite ease alternate;
@@ -136,7 +140,24 @@ animation: SUbtitle 5s infinite ease alternate ;
 
 `;
 
-const Container12 = styled.div``
+const Container12 = styled.div`
+width: 780px;
+height: 780px;
+object-fit: contain;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+animation: animate 2s infinite ease alternate;
+pointer-events: none;
+
+@media only screen and (max-width: 768px) {
+ max-width: 100%;
+ max-height: 100%;
+ display: block ;
+}`
 
 
 
@@ -147,6 +168,7 @@ const works = () => {
         <Section>
             <Container>
                 <Left>
+                  
                   <Item>
                     <ItemLista>
                         {data.map((item) => (<Item key={item}> {item}</Item>))}
@@ -155,9 +177,15 @@ const works = () => {
                 </Left>
                 
                 <Right>
-                  <Container12>
-                  <h1> dasbhdddddddddddddddddd</h1>
- </Container12>
+                <Canvas>
+                <OrbitControls enableZoom={false} enableRotate={true}  />
+                <ambientLight intensity={0.40} />
+                <Sphere args={[10, 10, 10]} scale={2}>
+                  <MeshDistortMaterial color="white" speed={0} reflectivity={0} /> 
+                <edgesGeometry  ></edgesGeometry> </Sphere>          
+            </Canvas>
+              
+                  <Container12><h1> dasbhdddddddddddddddddd</h1></Container12>
 
                 
             

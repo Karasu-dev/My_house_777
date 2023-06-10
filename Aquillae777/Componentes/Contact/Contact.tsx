@@ -105,12 +105,13 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
  width: 150px;
-  background-color: blue;
+  background-color: black;
   color: white;
   border: none;
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+  border : solid ;
   padding: 10px;
 
    

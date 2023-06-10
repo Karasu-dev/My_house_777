@@ -200,7 +200,8 @@ animation: box2 10s infinite ease alternate ;
 
 const Box3 = styled.div`
 padding: 5px;
-margin: 10px;
+margin: 10p  box-shadow: 0px 8px 16px 0px rgba(2);
+x;
 width:50%;
 height: 400px;
 color:pink;

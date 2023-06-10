@@ -7,6 +7,7 @@ import IMG from "../../../Img/Meu projeto.png"
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import mp3 from "../../../Img/backaudio.mp3";
+import { RingGeometry } from "three";
 
 const Section = styled.div`
 height: 200vh;
@@ -170,12 +171,12 @@ export const Hero = () => {
                 <Container12>
 
   
-                <Title> Esse site está em estado de desenvolvimento !!!</Title>
+                <Title> Este site está em constante desenvolvimento </Title>
                 
                 <Whatwedo>
                   
                   <Line src=""/>
-                  <SUbtitle> Este Site está em processo de desenvolvimento estou desenvolvendo o front-end, em duas semanas todas as funcionalidades serão adicionadas  </SUbtitle>
+                  <SUbtitle>  </SUbtitle>
                 </Whatwedo>
                 <Button> GitHub <GoOctoface/> </Button>
 
@@ -189,8 +190,10 @@ export const Hero = () => {
               <OrbitControls enableZoom={false} enableRotate={false}  />
               <ambientLight intensity={0.40} />
               <Sphere args={[0.6, 100, 100]} scale={2}>
-                <MeshDistortMaterial color="#00FFFF" speed={10} reflectivity={1} />  </Sphere>          
+                <MeshDistortMaterial color="black" speed={10} reflectivity={1} /> 
+                 <ringGeometry args={[0.5, 0.9 , 100]}></ringGeometry>  </Sphere>          
           </Canvas>
+          
           <Img src={IMG} />
 
               </Right>

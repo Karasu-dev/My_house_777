@@ -1,11 +1,11 @@
 .cybr-btn {
     --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
     --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-    --primary-hue: 0;
-    --primary-lightness: 50;
-    --color: hsl(197, 100%, 15%);
+    --primary-hue: 7;
+    --primary-lightness: 777;
+    --color: hsl(210, 25%, 2%);
     --font-size: 26px;
-    --shadow-primary-hue: 180;
+    --shadow-primary-hue: 77;
     --label-size: 9px;
     --shadow-secondary-hue: 60;
     --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);

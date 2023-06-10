@@ -11,8 +11,7 @@ import styled from "styled-components";
 import Img from "../../../Img/i349388.webp";
 
 
-const color2 = "#99ffef"; 
-const color = "red  "; 
+const color2 = "green"; 
 
 
 const Icosahedron = () => (
@@ -42,7 +41,7 @@ const Star = ({ p }: { p: number }) => {
   });
   return (
     <mesh ref={meshRef}>
-      <boxGeometry args={[10, 10, 10, 1,  10, 10 ,  ]} />
+      <boxGeometry args={[10, 10, 10, 10,  10, 10 ,  ]} />
       <meshBasicMaterial wireframe color={color2}/>
       
     </mesh>
