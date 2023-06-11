@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import { RingGeometry } from "three";
-
+import Interface2 from "../terminal/interface1";
 
 
 const data = [
@@ -177,16 +177,9 @@ const works = () => {
                 </Left>
                 
                 <Right>
-                <Canvas>
-                <OrbitControls enableZoom={false} enableRotate={true}  />
-                <ambientLight intensity={0.40} />
-                <Sphere args={[10, 10, 10]} scale={2}>
-                  <MeshDistortMaterial color="white" speed={0} reflectivity={0} /> 
-                <edgesGeometry  ></edgesGeometry> </Sphere>          
-            </Canvas>
+                <Interface2></Interface2>              
+             
               
-                  <Container12><h1> dasbhdddddddddddddddddd</h1></Container12>
-
                 
             
                 </Right>

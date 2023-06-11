@@ -5,6 +5,7 @@ import IMGdois from "../../../Img/iconw/java.png";
 import IMGtres from "../../../Img/iconw/typescript.png";
 import IMGquatro from "../../../Img/iconw/sql-server.png";
 import IMGcinco from "../../../Img/iconw/dados-binarios.png";
+import Interface2 from "../terminal/interface2";
 
 
 
@@ -139,7 +140,7 @@ margin: 10px;
 width: 50%;
 height: 400px;
 color: ;
-background: rgba(255, 0, 0, 1);
+background: rgba(255, 0, 0, 0.50);
 border-width: 5px;
 border-radius: 20px;
 box-shadow: rgba(217, 24, 22, 0.4) -5px 10px, rgba(217, 24, 22, 0.3) -15px 20px, rgba(217, 24, 22, 0.2) -20px 25px, rgba(217, 24, 22, 0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
@@ -173,7 +174,7 @@ width:50%;
 height: 400px;
 color: ;
 border-width: 5px;
-background: rgba(0, 0, 255, 1);
+background: rgba(0, 0, 255, 0.50);
 border-radius: 20px;
 box-shadow: rgba(0, 38, 255, 0.4) -5px 10px, rgba(0, 38, 255,  0.3) -15px 20px, rgba(0, 38, 255,  0.2) -20px 25px, rgba(0, 38, 255,  0.1) -25px 30px, rgba(217, 24, 22, 0.0) -30px 35px;
 animation: box2 10s infinite ease alternate ;
@@ -206,7 +207,7 @@ width:50%;
 height: 400px;
 color:pink;
 border-width: 5px;
-background: rgba(255, 255, 0, 1);
+background: rgba(255, 255, 0, 0.1);
 border-radius: 20px;
 box-shadow: rgba(255, 255, 0,
  0.4) -5px 10px, rgba(255, 255, 0,
@@ -244,7 +245,7 @@ margin: 10px;
 height: 400px;
 border-width: 5px;
 width:50%;
-background: rgba(0, 255, 0, 1);
+background: rgba(0, 255, 0, 0.50);
 border: 2px;
 border-radius: 20px;
 box-shadow: rgba(0, 255, 132, 0.4) -5px 10px, rgba(0, 255, 132, 0.3) -15px 20px, rgba(0, 255, 132, 0.2) -20px 25px, rgba(0, 255, 132, 0.1) -25px 30px, rgba(0, 255, 132, 0.0) -30px 35px;
@@ -317,13 +318,12 @@ const Carrosel = () => {
     <Section>
       <Container>  
 
-        <ContainerText> 
-          <Title1> Stacks </Title1>
-           <Sub> Essas são minhas Ferramentas de criação sinto que cada stack mata um problema, java é minha linguagem principal  </Sub>
+        <Interface2></Interface2>
 
-        </ContainerText>
+=          
     
         <ContainerBox>    
+              
           <Box1>
             <Title>Java <Img src={IMGdois}/></Title> 
             

@@ -8,7 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import mp3 from "../../../Img/backaudio.mp3";
 import { RingGeometry } from "three";
-
+import Interface from "../terminal/interface";
 const Section = styled.div`
 height: 200vh;
 scroll-snap-align: center;
@@ -151,8 +151,8 @@ pointer-events: none;
 
 
 const Container12 = styled.div`
-border: solid;
-background: black;
+border: ;
+background: ;
 
 
 `;
@@ -170,14 +170,8 @@ export const Hero = () => {
               <Left> 
                 <Container12>
 
-  
-                <Title> Este site está em constante desenvolvimento </Title>
-                
-                <Whatwedo>
-                  
-                  <Line src=""/>
-                  <SUbtitle>  </SUbtitle>
-                </Whatwedo>
+                <Interface></Interface>
+          
                 <Button> GitHub <GoOctoface/> </Button>
 
                 </Container12>
