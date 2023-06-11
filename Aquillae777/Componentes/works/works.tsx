@@ -8,7 +8,7 @@ import Interface2 from "../terminal/interface1";
 
 
 const data = [
-    "tecnologia", "inovação","tecnologia", "inovação",
+    "Technology Innovation Aquillae777"
    
 ];
 
@@ -30,10 +30,25 @@ justify-content: space-between;
 
 
 const Left = styled.div`
- flex: 1`;
+ flex: 1 
+ 
+ @media only screen and (max-width: 780px) {
+  flex: 1;
+  align-items: center;
+
+}`;
+ 
+ 
 
 const Right = styled.div`
 flex: 1;
+
+@media only screen and (max-width: 768px) {
+  flex: 1;
+  width: auto;
+  height: auto;
+}
+
 `;
 
 const Item = styled.ul`
@@ -78,18 +93,19 @@ animation: animate 4s  infinite ease alternate;
 }
 
 ::after {
-  content: "tecnologia inovação tecnologia inovação";
+  font-size: 85px;
+  content: "Technology Innovation Aquillae777";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10px;
   color: white;
   width: 0px;
   overflow: hidden;
 }
 
-&:hover {
+ 
   ::after {
-    animation: moveText 3s linear both;
+    animation: moveText 1s infinite ease alternate;
 
     @keyframes moveText {
       to {
@@ -174,13 +190,11 @@ const works = () => {
                         {data.map((item) => (<Item key={item}> {item}</Item>))}
                     </ItemLista>
                     </Item>
+                    
                 </Left>
                 
                 <Right>
                 <Interface2></Interface2>              
-             
-              
-                
             
                 </Right>
 

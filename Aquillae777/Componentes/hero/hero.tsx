@@ -152,7 +152,7 @@ pointer-events: none;
 
 const Container12 = styled.div`
 border: ;
-background: ;
+background: b;
 
 
 `;
@@ -171,7 +171,8 @@ export const Hero = () => {
                 <Container12>
 
                 <Interface></Interface>
-          
+                
+
                 <Button> GitHub <GoOctoface/> </Button>
 
                 </Container12>

@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import "../terminal/styles.css"
+import {GoOctoface, GoX,GoDash,GoScreenFull} from "react-icons/go";
+
 
 
 function Interface() {
 
     return (<>
         <div className="fakeMenu">
-            <div className="fakeButtons fakeClose"></div>
-            <div className="fakeButtons fakeMinimize"></div>
-            <div className="fakeButtons fakeZoom"></div>
+            <div className="fakeButtons fakeClose"> <GoX/> </div>
+            <div className="fakeButtons fakeMinimize"> <GoDash/> </div>
+            <div className="fakeButtons fakeZoom"> <GoScreenFull></GoScreenFull>  </div>
         </div>
         <div className="fakeScreen">
             <p className="line1">$ /Project/My_house_777/<span className="cursor1">_</span></p>

@@ -1,7 +1,4 @@
-body {
-    background-color: #272727;
-    padding: 10px;
-  }
+
   
   .fakeButtons {
     height: 10px;
@@ -17,29 +14,30 @@ body {
   }
   
   .fakeMinimize {
+    
     left: 11px;
-    background-color: #ffc100;
+    background-color: #000000;
     border-color: #9d802c;
   }
   
   .fakeZoom {
     left: 16px;
-    background-color: #00d742;
-    border-color: #049931;
+    background-color: #070a08;
+    border-color: #030303;
   }
   
   .fakeMenu {
     width: 550px;
     box-sizing: border-box;
     height: 25px;
-    background-color: #bbb;
+    background-color: #524c4c;
     margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
   }
   
   .fakeScreen {
-    background-color: #151515;
+    background-color: #5a1256;
     box-sizing: border-box;
     width: 550px;
     margin: 0 auto;
