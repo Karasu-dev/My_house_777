@@ -230,7 +230,6 @@ const NavBar = () => {
     <Section>
       <Container>
        <button  className="cybr-btn"> Home<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-       <button  className="cybr-btn"> Assembly <span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
 
       
       <DropdownContainer>

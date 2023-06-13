@@ -5,7 +5,7 @@ import IMGdois from "../../../Img/iconw/java.png";
 import IMGtres from "../../../Img/iconw/typescript.png";
 import IMGquatro from "../../../Img/iconw/sql-server.png";
 import IMGcinco from "../../../Img/iconw/dados-binarios.png";
-import Interface2 from "../terminal/interface2";
+import Interface2 from "../terminal/macs/interface2";
 
 
 
@@ -336,7 +336,7 @@ const Carrosel = () => {
               
               
           
-            <Button> Projects</Button>
+              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
           </Box1>
 
           <Box2>
@@ -352,7 +352,7 @@ const Carrosel = () => {
               
               
           
-            <Button> Projects</Button>
+              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
           </Box2>
 
 
@@ -365,7 +365,7 @@ const Carrosel = () => {
               <Ferramentas> Nasm </Ferramentas>
               <Ferramentas> gcc </Ferramentas>
             
-            <Button> Projects</Button>
+              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
           </Box4>
          </ContainerBox>
         </Container>

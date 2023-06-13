@@ -8,7 +8,9 @@ import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import mp3 from "../../../Img/backaudio.mp3";
 import { RingGeometry } from "three";
-import Interface from "../terminal/interface";
+import Interface from "../terminal/obuntu/interface";
+import {NavLink} from "react-router-dom"
+
 const Section = styled.div`
 height: 200vh;
 scroll-snap-align: center;
@@ -112,6 +114,7 @@ width: 120px;
 height: 30px;
 border-radius: 10px;
 box-shadow: 4px 3px lightblue;
+font-size: 20px;
 animation: button 5s infinite ease alternate ;
 @keyframes button {
   to {
@@ -172,8 +175,9 @@ export const Hero = () => {
 
                 <Interface></Interface>
                 
+              <Button><NavLink className={Button} to={"https://github.com/Aquillae777"} target="_blank">GitHub<GoOctoface/> </NavLink>
+ </Button>
 
-                <Button> GitHub <GoOctoface/> </Button>
 
                 </Container12>
               
