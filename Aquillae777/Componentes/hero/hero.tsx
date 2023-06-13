@@ -6,10 +6,10 @@ import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/Meu projeto.png"
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
-import mp3 from "../../../Img/backaudio.mp3";
 import { RingGeometry } from "three";
-import Interface from "../terminal/obuntu/interface";
 import {NavLink} from "react-router-dom"
+import  Ubuntu from "../Obuntu/interface"
+import Obuntu from "../Obuntu/interface";
 
 const Section = styled.div`
 height: 200vh;
@@ -172,8 +172,8 @@ export const Hero = () => {
               
               <Left> 
                 <Container12>
+                  <Obuntu></Obuntu>
 
-                <Interface></Interface>
                 
               <Button><NavLink className={Button} to={"https://github.com/Aquillae777"} target="_blank">GitHub<GoOctoface/> </NavLink>
  </Button>

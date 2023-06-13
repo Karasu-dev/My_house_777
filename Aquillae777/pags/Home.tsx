@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../Componentes/hero/hero";
-import Who from "../Componentes/who/who";
 import Whors from "../Componentes/works/works";
 import styled from "styled-components";
 import Globlo from "../Componentes/Word/Globlo";
@@ -23,16 +22,19 @@ color: white;
 
 const Audio = styled.audio `
 
- 
+
+
 `
+
+
 const Home = () => {
     return (
         <Container>
-            <Audio  autoPlay={true} loop src={mp3}/>
+            <Audio autoPlay={true} loop src={mp3} muted={false} />
             <Hero />
             <Carrosel/>
-            <Whors></Whors>
-            <Contact></Contact>     
+            <Whors/>
+            <Contact/>     
             <Globlo/>
         </Container>
     )

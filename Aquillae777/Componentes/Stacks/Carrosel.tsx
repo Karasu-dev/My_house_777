@@ -5,7 +5,6 @@ import IMGdois from "../../../Img/iconw/java.png";
 import IMGtres from "../../../Img/iconw/typescript.png";
 import IMGquatro from "../../../Img/iconw/sql-server.png";
 import IMGcinco from "../../../Img/iconw/dados-binarios.png";
-import Interface2 from "../terminal/macs/interface2";
 
 
 
@@ -318,7 +317,6 @@ const Carrosel = () => {
     <Section>
       <Container>  
 
-        <Interface2></Interface2>
 
 =          
     

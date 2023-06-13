@@ -4,7 +4,6 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import { RingGeometry } from "three";
-import Interface2 from "../terminal/interface1";
 
 
 const data = [
@@ -194,7 +193,6 @@ const works = () => {
                 </Left>
                 
                 <Right>
-                <Interface2></Interface2>              
             
                 </Right>
 

@@ -64,7 +64,7 @@
   }
   
   .line1 {
-    color: #9CD9F0;
+    color: #03f016;
     -webkit-animation: type .5s 1s steps(20, end) forwards;
     -moz-animation: type .5s 1s steps(20, end) forwards;
     -o-animation: type .5s 1s steps(20, end) forwards;
@@ -79,7 +79,7 @@
   }
   
   .line2 {
-    color: #CDEE69;
+    color: #ffffff;
     -webkit-animation: type .5s 4.25s steps(20, end) forwards;
     -moz-animation: type .5s 4.25s steps(20, end) forwards;
     -o-animation: type .5s 4.25s steps(20, end) forwards;
@@ -94,7 +94,7 @@
   }
   
   .line3 {
-    color: #E09690;
+    color: #f2f8f2;
     -webkit-animation: type .5s 7.5s steps(20, end) forwards;
     -moz-animation: type .5s 7.5s steps(20, end) forwards;
     -o-animation: type .5s 7.5s steps(20, end) forwards;
