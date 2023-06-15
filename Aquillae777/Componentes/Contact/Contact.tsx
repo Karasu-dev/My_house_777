@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 
 
+
+
 const Section = styled.div`
   height: 50vh;
   scroll-snap-align: center;

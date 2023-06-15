@@ -187,9 +187,9 @@ export const Hero = () => {
                 
        
               <OrbitControls enableZoom={false} enableRotate={false}  />
-              <ambientLight intensity={0.40} />
-              <Sphere args={[0.6, 100, 100]} scale={2}>
-                <MeshDistortMaterial color="black" speed={10} reflectivity={1} /> 
+              <ambientLight intensity={1} />
+              <Sphere args={[0.6, 10, 100]} scale={2}>
+                <MeshDistortMaterial color="white" speed={10} reflectivity={1} /> 
                  <ringGeometry args={[0.5, 0.9 , 100]}></ringGeometry>  </Sphere>          
           </Canvas>
           

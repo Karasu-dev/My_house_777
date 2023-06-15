@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import { RingGeometry } from "three";
+import Obuntu from "../Obuntu/interface";
 
 
 const data = [
@@ -193,6 +194,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
+                  <Obuntu></Obuntu>
             
                 </Right>
 

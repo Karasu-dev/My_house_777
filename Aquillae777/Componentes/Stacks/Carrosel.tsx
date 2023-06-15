@@ -333,9 +333,7 @@ const Carrosel = () => {
               <Ferramentas>  jsf</Ferramentas>
               
               
-          
-              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-          </Box1>
+           </Box1>
 
           <Box2>
             <Title> Typescript <Img src={IMGtres}/> </Title>
@@ -349,9 +347,7 @@ const Carrosel = () => {
 
               
               
-          
-              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-          </Box2>
+           </Box2>
 
 
         
@@ -362,9 +358,7 @@ const Carrosel = () => {
           
               <Ferramentas> Nasm </Ferramentas>
               <Ferramentas> gcc </Ferramentas>
-            
-              <button  className="cybr-btn"> TEste<span aria-hidden>_</span><span aria-hidden className="cybr-btn__glitch">Home</span> </button>
-          </Box4>
+             </Box4>
          </ContainerBox>
         </Container>
     </Section>)

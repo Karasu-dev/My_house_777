@@ -9,9 +9,20 @@ function Obuntu() {
 
     return (<>
         <div className="fakeMenu">
-            <div className="fakeButtons fakeClose"> <GoX/> </div>
-            <div className="fakeButtons fakeMinimize"> <GoDash/> </div>
-            <div className="fakeButtons fakeZoom"> <GoScreenFull></GoScreenFull>  </div>
+            <div className="fakeButtons2 fakeNick" > @Aquillae777</div>
+        <div className="fakeButtons fakeMinimize"> <GoDash/>  </div>
+            <div className="fakeButtons fakeZoom"> <GoScreenFull></GoScreenFull> </div>
+            <div className="fakeButtons fakeClose">  <GoX/>  </div> 
+        </div>
+       
+        <div className="fakeButtons2 fakeMenu"> 
+        <div className="fakeButtons2 fakeFile"> File</div>
+        <div className="fakeButtons2 fakeEdit"> Edit </div>
+        <div className="fakeButtons2 fakeView"> view</div>
+        <div className="fakeButtons2 fakeSearch">Search</div>
+        <div className=" fakeButtons2 fakeTerminal"> Terminal</div>
+        <div className="fakeButtons2 fakeHelp"> Help</div>
+       
         </div>
         <div className="fakeScreen">
             <p className="line1">Aquillae7:-$/Project/My_house_777/<span className="cursor1">_</span></p>
