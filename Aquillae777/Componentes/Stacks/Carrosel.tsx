@@ -365,7 +365,6 @@ const Carrosel = () => {
 }
 export default Carrosel;
 
-
 /*     <Box3>
             <Title> SQL <Img src={IMGquatro}/></Title>
         
