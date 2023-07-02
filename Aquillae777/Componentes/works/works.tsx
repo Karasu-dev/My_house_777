@@ -156,24 +156,6 @@ animation: SUbtitle 5s infinite ease alternate ;
 
 `;
 
-const Container12 = styled.div`
-width: 780px;
-height: 780px;
-object-fit: contain;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-animation: animate 2s infinite ease alternate;
-pointer-events: none;
-
-@media only screen and (max-width: 768px) {
- max-width: 100%;
- max-height: 100%;
- display: block ;
-}`
 
 
 

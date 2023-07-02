@@ -11,7 +11,11 @@ import styled from "styled-components";
 import Img from "../../../Img/i349388.webp";
 
 
+
+
 const color2 = "green"; 
+
+
 
 
 const Icosahedron = () => (
@@ -47,7 +51,7 @@ const Star = ({ p }: { p: number }) => {
     </mesh>
   );
 };
-function Scene({ numStars = 400}) {
+function Scene({ numStars = 200}) {
   const gl = useThree((state) => state.gl);
   const { scrollYProgress } = useScroll();
   const yAngle = useTransform(

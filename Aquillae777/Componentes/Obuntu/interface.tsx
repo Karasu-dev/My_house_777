@@ -3,12 +3,24 @@ import styled from "styled-components";
 import "../Obuntu/styles.css"
 import {GoOctoface, GoX,GoDash,GoScreenFull} from "react-icons/go";
 
+const Container = styled.div`
+flex: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+@media only screen and (max-width: 780px) {
+  flex: 1;
+  align-items: center;
+`;
+
 
 
 function Obuntu() {
 
-    return (<>
-        <div className="fakeMenu">
+    return (<Container>  
+
+<div className="fakeMenu">
             <div className="fakeButtons2 fakeNick" > @Aquillae777</div>
         <div className="fakeButtons fakeMinimize"> <GoDash/>  </div>
             <div className="fakeButtons fakeZoom"> <GoScreenFull></GoScreenFull> </div>
@@ -30,8 +42,10 @@ function Obuntu() {
             <p className="line3">[?]  (Press button)<span className="cursor3">_</span></p>
             <p className="line4"><span className="cursor4">_</span></p>
         </div>
+    </Container>
 
-    </>);
+
+);
 
 
 

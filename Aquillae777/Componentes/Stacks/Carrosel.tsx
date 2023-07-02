@@ -335,19 +335,7 @@ const Carrosel = () => {
               
            </Box1>
 
-          <Box2>
-            <Title> Typescript <Img src={IMGtres}/> </Title>
-            
-        
-              <Ferramentas> Vscode</Ferramentas>
-              <Ferramentas> Node </Ferramentas>
-              <Ferramentas> vercel </Ferramentas>
-              <Ferramentas> React </Ferramentas>
-
-
-              
-              
-           </Box2>
+       
 
 
         
@@ -358,6 +346,9 @@ const Carrosel = () => {
           
               <Ferramentas> Nasm </Ferramentas>
               <Ferramentas> gcc </Ferramentas>
+              <Ferramentas> gcc </Ferramentas>
+              <Ferramentas> gcc </Ferramentas>
+
              </Box4>
          </ContainerBox>
         </Container>

@@ -34,8 +34,8 @@ const Home = () => {
             <Hero />
             <Carrosel/>
             <Whors/>
-            <Contact/>     
-            <Globlo/>
+            <Contact/>   
+            <Globlo></Globlo>  
         </Container>
     )
 }

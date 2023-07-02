@@ -36,7 +36,7 @@ const Form = styled.form`
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   z-index: 30;
   animation: animate 3s infinite ease alternate;
 
@@ -59,9 +59,10 @@ const Form = styled.form`
 
 const Input = styled.input`
   padding: 20px;
-  background-color: #e8e6e6;
+  background-color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
+  color: green;
   z-index: -0;
 
   @media only screen and (max-width: 768px) {
@@ -86,7 +87,9 @@ const TextArea = styled.textarea`
   padding: 25px;
   border: none;
   border-radius: 5px;
-  background-color: #e8e6e6;
+  background-color: black;
+  color: green;
+  font-size: 15px;
 
   @media only screen and (max-width: 768px) {
     padding: 15px;
@@ -112,7 +115,7 @@ const Button = styled.button`
   border: none;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 100px;
   border : solid ;
   padding: 10px;
 
