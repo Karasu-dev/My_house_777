@@ -4,8 +4,7 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
 import { RingGeometry } from "three";
-import Obuntu from "../Obuntu/interface";
-
+import Mac from "../Mac/Mac";
 
 const data = [
     "Technology Innovation Aquillae777"
@@ -176,8 +175,7 @@ const works = () => {
                 </Left>
                 
                 <Right>
-                  <Obuntu></Obuntu>
-            
+                 <Mac/>
                 </Right>
 
             </Container>

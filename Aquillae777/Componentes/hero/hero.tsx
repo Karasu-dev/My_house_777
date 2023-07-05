@@ -2,7 +2,6 @@
 import NavBar from "../navbar/Navbar";
 import Who from "../who/who";
 import styled from "styled-components";
-import {GoOctoface} from "react-icons/go";
 import IMG from "../../../Img/Meu projeto.png"
 import { Canvas } from "@react-three/fiber";
 import { MeshDistortMaterial, OrbitControls, Sphere, } from "@react-three/drei";
@@ -153,12 +152,7 @@ pointer-events: none;
 `;
 
 
-const Container12 = styled.div`
-border: ;
-background: b;
 
-
-`;
 
 
 
@@ -171,16 +165,7 @@ export const Hero = () => {
             <Container>
               
               <Left> 
-                <Container12>
-                  <Obuntu></Obuntu>
-
-                
-              <Button><NavLink className={Button} to={"https://github.com/Aquillae777"} target="_blank">GitHub<GoOctoface/> </NavLink>
- </Button>
-
-
-                </Container12>
-              
+                  <Obuntu></Obuntu>              
               </Left>
               <Right> 
               <Canvas>

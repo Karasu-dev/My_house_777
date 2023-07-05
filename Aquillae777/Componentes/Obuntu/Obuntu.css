@@ -37,9 +37,9 @@
 
 
   .fakeButtons2 {
-    left: 5px;
-    padding: 1px;
-    margin: 1px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
     position: relative;
     display: inline-block;
   }

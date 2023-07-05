@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import "../Obuntu/styles.css"
-import {GoOctoface, GoX,GoDash,GoScreenFull} from "react-icons/go";
+import "../Obuntu/Obuntu.css"
+import { GoX,GoDash,GoScreenFull} from "react-icons/go";
 
 const Container = styled.div`
 flex: 2;

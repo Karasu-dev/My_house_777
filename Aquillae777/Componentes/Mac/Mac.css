@@ -1,0 +1,219 @@
+
+
+.fakeButtonsMac {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.fakeMinimizeMac {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.fakeZoomMac {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.fakeMenuMac {
+  width: 550px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.fakeScreenMac {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+p {
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: normal;
+  overflow: hidden;
+  width: 0;
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1Mac {
+  color: #9CD9F0;
+  -webkit-animation: typeMac .5s 1s steps(20, end) forwards;
+  -moz-animation: typeMac .5s 1s steps(20, end) forwards;
+  -o-animation: typeMac .5s 1s steps(20, end) forwards;
+  animation: typeMac .5s 1s steps(20, end) forwards;
+}
+
+.cursor1Mac {
+  -webkit-animation: blinkMac 1s 2s 2 forwards;
+  -moz-animation: blinkMac 1s 2s 2 forwards;
+  -o-animation: blinkMac 1s 2s 2 forwards;
+  animation: blinkMac 1s 2s 2 forwards;
+}
+
+.line2Mac {
+  color: #CDEE69;
+  -webkit-animation: typeMac .5s 4.25s steps(20, end) forwards;
+  -moz-animation: typeMac .5s 4.25s steps(20, end) forwards;
+  -o-animation: typeMac .5s 4.25s steps(20, end) forwards;
+  animation: typeMac .5s 4.25s steps(20, end) forwards;
+}
+
+.cursor2Mac {
+  -webkit-animation: blinkMac 1s 5.25s 2 forwards;
+  -moz-animation: blinkMac 1s 5.25s 2 forwards;
+  -o-animation: blinkMac 1s 5.25s 2 forwards;
+  animation: blinkMac 1s 5.25s 2 forwards;
+}
+
+.line3Mac {
+  color: #E09690;
+  -webkit-animation: typeMac .5s 7.5s steps(20, end) forwards;
+  -moz-animation: typeMac .5s 7.5s steps(20, end) forwards;
+  -o-animation: typeMac .5s 7.5s steps(20, end) forwards;
+  animation: typeMac .5s 7.5s steps(20, end) forwards;
+}
+
+.cursor3Mac {
+  -webkit-animation: blinkMac 1s 8.5s 2 forwards;
+  -moz-animation: blinkMac 1s 8.5s 2 forwards;
+  -o-animation: blinkMac 1s 8.5s 2 forwards;
+  animation: blinkMac 1s 8.5s 2 forwards;
+}
+
+.line4Mac {
+  color: #fff;
+  -webkit-animation: typeMac .5s 10.75s steps(20, end) forwards;
+  -moz-animation: typeMac .5s 10.75s steps(20, end) forwards;
+  -o-animation: typeMac .5s 10.75s steps(20, end) forwards;
+  animation: typeMac .5s 10.75s steps(20, end) forwards;
+}
+
+.cursor4Mac {
+  -webkit-animation: blinkMac 1s 11.5s infinite;
+  -moz-animation: blinkMac 1s 8.5s infinite;
+  -o-animation: blinkMac 1s 8.5s infinite;
+  animation: blinkMac 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blinkMac {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blinkMac {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blinkMac {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinkMac {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes typeMac {
+  to {
+    width: 17em;
+  }
+}
+
+@-moz-keyframes typeMac {
+  to {
+    width: 17em;
+  }
+}
+
+@-o-keyframes typeMac {
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes typeMac {
+  to {
+    width: 17em;
+  }
+}

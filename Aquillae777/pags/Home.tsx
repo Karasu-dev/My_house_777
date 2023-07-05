@@ -6,6 +6,7 @@ import Globlo from "../Componentes/Word/Globlo";
 import Carrosel from "../Componentes/Stacks/Carrosel";
 import Contact from "../Componentes/Contact/Contact";
 import mp3 from "../../Img/backaudio.mp3";
+import Who from "../Componentes/who/who";
 
 
 const Container = styled.div`
@@ -34,6 +35,7 @@ const Home = () => {
             <Hero />
             <Carrosel/>
             <Whors/>
+            <Who></Who>
             <Contact/>   
             <Globlo></Globlo>  
         </Container>
