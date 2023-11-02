@@ -6,7 +6,7 @@ import './style.css';
 
 export const MainPage = () => {
   return (
-    <Canvas  gl={{ alpha: false }} camera={{ position: [0, 3, 100], fov: 15 }}>
+    <Canvas concurrent gl={{ alpha: false }} pixelRatio={[1, 1.5]} camera={{ position: [0, 3, 100], fov: 15 }}>
       <color attach="background" args={['black']} />
       <fog attach="fog" args={['black', 15, 20]} />
       <Suspense fallback={null}>
