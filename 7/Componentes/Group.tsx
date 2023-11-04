@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Reflector, useTexture} from '@react-three/drei';
 import { Vector2 } from 'three';
 
@@ -38,3 +38,4 @@ function Ground() {
 }
 
 export default Ground;
+*/

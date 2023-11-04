@@ -3,6 +3,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Reflector, Text, useTexture, useGLTF } from '@react-three/drei';
 import './style.css';
+import { Matrix4, Texture } from 'three';
 
 export const MainPage = () => {
   return (
@@ -42,16 +43,21 @@ function VideoText(props:any) {
   )
 }
 
-function Ground(props: JSX.IntrinsicAttributes[]) {
+function Ground(props: JSX.IntrinsicAttributes) : React.JSX.Element {
   const [floor, normal] = useTexture(['/SurfaceImperfections003_1K_var1.jpg', '/SurfaceImperfections003_1K_Normal.jpg'])
+  const normalScale = new THREE.Vector2(1, 1);
+
+// Define normalScale corretamente usando o objeto Vector2
   return (
     <Reflector blur={[400, 100]} resolution={512} args={[10, 10]} mirror={0.5} mixBlur={6} mixStrength={1.5} rotation={[-Math.PI / 2, 0, Math.PI / 2]}>
-      {(Material, props) => <Material mixBlur={0} mixStrength={0} mirror={0} textureMatrix={new THREE.Matrix4} tDiffuse={new THREE.Texture} tDiffuseBlur={new THREE.Texture} hasBlur={false} minDepthThreshold={0} maxDepthThreshold={0} depthScale={0} depthToBlurRatioBias={0} distortion={0} mixContrast={0}  />}
+      {(Material, props) => {
+        return <Material color="#a0a0a0" metalness={0.4} roughnessMap={floor} normalMap={normal} normalScale={normalScale} mixBlur={0} mixStrength={0} mirror={0} textureMatrix={new Matrix4} tDiffuse={new Texture} tDiffuseBlur={new Texture} hasBlur={false} minDepthThreshold={0} maxDepthThreshold={0} depthScale={0} depthToBlurRatioBias={0} distortion={0} mixContrast={20}></Material>
+               
+        ;
+      }}
     </Reflector>
   )
 }
-
-/*color="#a0a0a0" metalness={0.4} roughnessMap={floor} normalMap={normal} normalScale={[2, 2]} {...props}*/
 
 function Intro() {
   const [vec] = useState(() => new THREE.Vector3())
