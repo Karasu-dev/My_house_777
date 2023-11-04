@@ -12,7 +12,6 @@ export const MainPage = () => {
       <fog attach="fog" args={['black', 15, 20]} />
       <Suspense fallback={null}>
         <group position={[0, -1, 0]}>
-          <Carla rotation={[0, Math.PI - 0.4, 0]} position={[-1.2, 0, 0.6]} scale={[0.26, 0.26, 0.26]} />
           <VideoText position={[0, 1.3, -2]} />
           <Ground />
         </group>
@@ -25,10 +24,6 @@ export const MainPage = () => {
   )
 }
 
-function Carla(props:any) {
-  const { scene } = useGLTF('/carla-draco.glb')
-  return <primitive object={scene} {...props} />
-}
 
 function VideoText(props:any) {
   const [video] = useState(() => Object.assign(document.createElement('video'), { src: '/drei.mp4', crossOrigin: 'Anonymous', loop: true, muted: true }))
