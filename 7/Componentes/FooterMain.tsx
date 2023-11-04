@@ -1,3 +1,5 @@
+'use client'
+
 import { Footer } from '@pmndrs/branding';
 
 export const  Overlay =()=> {
