@@ -49,7 +49,7 @@ function Ground(props: JSX.IntrinsicAttributes) {
 // Define normalScale corretamente usando o objeto Vector2
   return (
     <Reflector blur={[400, 100]} resolution={512} args={[10, 10]} mirror={0.5} mixBlur={6} mixStrength={1.5} rotation={[-Math.PI / 2, 0, Math.PI / 2]}>
-      {(Material, props) => <Material color="#a0a0a0" metalness={0.4} roughnessMap={floor} normalMap={normal} normalScale={normalScale} {...props} />}
+      {(Material, props) => <Material color="#a0a0a0" metalness={0.4} roughnessMap={floor} normalMap={normal} normalScale={normalScale} mixBlur={0} mixStrength={0} mirror={0} textureMatrix={new THREE.Matrix4} tDiffuse={new THREE.Texture} tDiffuseBlur={new THREE.Texture} hasBlur={false} minDepthThreshold={0} maxDepthThreshold={0} depthScale={0} depthToBlurRatioBias={0} distortion={0} mixContrast={0}  />}
     </Reflector>
   )
 }
